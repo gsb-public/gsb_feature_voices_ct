@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the GSB Feature Voices CT feature.
+ */
+
+include_once 'gsb_feature_voices_ct.features.inc';
