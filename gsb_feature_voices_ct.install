@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * Add some terms to the Category vocabulary.
+ */
+function gsb_feature_voices_ct_update_8001() {
+  // Machine name of the Taxonomy vocabulary.
+  $vocab = 'person_type';
+  $taxonomy_person = taxonomy_vocabulary_machine_name_load($vocab);
+
+  // Term names to be added.
+  $items = [
+    'MBA Student',
+    'Sloan Fellow',
+    'PhD Student',
+    'MBA Alumni',
+    'Executive Education Participant',
+    'Seed Transformation Program Participant',
+    'Faculty',
+  ];
+  foreach ($items as $item) {
+    custom_create_taxonomy_term($item,$taxonomy_person->vid);
+  }
+}
+
+/**
+ * Create a taxonomy term and return the tid.
+ */
+function custom_create_taxonomy_term($name, $vid) {
+  $term = new stdClass();
+  $term->name = $name;
+  $term->vid = $vid;
+  taxonomy_term_save($term);
+  return $term->tid;
+}
