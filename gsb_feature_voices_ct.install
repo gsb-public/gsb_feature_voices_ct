@@ -3,7 +3,7 @@
 /**
  * Add some terms to the Category vocabulary.
  */
-function gsb_feature_voices_ct_update_8001() {
+function gsb_feature_voices_ct_install() {
   // Machine name of the Taxonomy vocabulary.
   $vocab = 'person_type';
   $taxonomy_person = taxonomy_vocabulary_machine_name_load($vocab);
@@ -14,22 +14,38 @@ function gsb_feature_voices_ct_update_8001() {
     'Sloan Fellow',
     'PhD Student',
     'MBA Alumni',
-    'Executive Education Participant',
+    'MsX/Sloan Alumni',
+    'Executive Education Participant' =>
+      array(
+        'SEP',
+        'Ignite',
+        'LEAD'
+      ),
     'Seed Transformation Program Participant',
     'Faculty',
   ];
-  foreach ($items as $item) {
-    custom_create_taxonomy_term($item,$taxonomy_person->vid);
+  foreach ($items as $key => $item) {
+    if(is_array($item)) {
+      $parent = custom_create_taxonomy_term($key, $taxonomy_person->vid);
+      foreach($item as $subterm) {
+        custom_create_taxonomy_term($subterm, $taxonomy_person->vid, $parent);
+      }
+    } else {
+      custom_create_taxonomy_term($item, $taxonomy_person->vid);
+    }
   }
 }
 
 /**
  * Create a taxonomy term and return the tid.
  */
-function custom_create_taxonomy_term($name, $vid) {
+function custom_create_taxonomy_term($name, $vid, $parent = NULL) {
   $term = new stdClass();
   $term->name = $name;
   $term->vid = $vid;
+  if (isset($parent)) {
+    $term->parent = $parent;
+  }
   taxonomy_term_save($term);
   return $term->tid;
 }
