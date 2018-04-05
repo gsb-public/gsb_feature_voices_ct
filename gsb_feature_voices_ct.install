@@ -4,6 +4,12 @@
  * Add some terms to the Category vocabulary.
  */
 function gsb_feature_voices_ct_install() {
+  $new_vocab = (object) array(
+    'name' => 'Person Type',
+    'description' => '',
+    'machine_name' => 'person_type',
+  );
+  taxonomy_vocabulary_save($new_vocab);
   // Machine name of the Taxonomy vocabulary.
   $vocab = 'person_type';
   $taxonomy_person = taxonomy_vocabulary_machine_name_load($vocab);
