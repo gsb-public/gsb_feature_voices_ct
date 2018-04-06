@@ -55,8 +55,124 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 41,
+      'weight' => 28,
     ),
+  );
+
+  // Exported field_instance: 'node-voices-field_academic_degrees_unlimited'.
+  $field_instances['node-voices-field_academic_degrees_unlimited'] = array(
+    'bundle' => 'voices',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'text_default',
+        'weight' => 11,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_academic_degrees_unlimited',
+    'label' => 'Education',
+    'required' => 0,
+    'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          'act' => 'act',
+          'full_html' => 'full_html',
+          'gsb_html_text' => 'gsb_html_text',
+          'gsb_wysiwyg_text' => 'gsb_wysiwyg_text',
+          'image_resource_caption' => 'image_resource_caption',
+          'image_text_equivalent' => 'image_text_equivalent',
+          'markdown' => 'markdown',
+          'markdown_lite_minus_resources' => 'markdown_lite_minus_resources',
+          'markdown_plus_iframe' => 'markdown_plus_iframe',
+          'paragraphed_plain_text' => 'paragraphed_plain_text',
+          'plain_text' => 'plain_text',
+          'sidebar' => 'sidebar',
+          'slideshow' => 'slideshow',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            'act' => array(
+              'weight' => 0,
+            ),
+            'full_html' => array(
+              'weight' => 1,
+            ),
+            'gsb_html_text' => array(
+              'weight' => -9,
+            ),
+            'gsb_wysiwyg_text' => array(
+              'weight' => -10,
+            ),
+            'image_resource_caption' => array(
+              'weight' => 0,
+            ),
+            'image_text_equivalent' => array(
+              'weight' => 0,
+            ),
+            'markdown' => array(
+              'weight' => 0,
+            ),
+            'markdown_lite_minus_resources' => array(
+              'weight' => 0,
+            ),
+            'markdown_plus_iframe' => array(
+              'weight' => 0,
+            ),
+            'paragraphed_plain_text' => array(
+              'weight' => 0,
+            ),
+            'plain_text' => array(
+              'weight' => 10,
+            ),
+            'sidebar' => array(
+              'weight' => 0,
+            ),
+            'slideshow' => array(
+              'weight' => 0,
+            ),
+          ),
+        ),
+      ),
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'maxlength_js' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 31,
+    ),
+    'workbench_access_field' => 0,
   );
 
   // Exported field_instance: 'node-voices-field_authors'.
@@ -104,7 +220,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
       'module' => 'field_collection',
       'settings' => array(),
       'type' => 'field_collection_embed',
-      'weight' => 48,
+      'weight' => 15,
     ),
     'workbench_access_field' => 0,
   );
@@ -169,7 +285,84 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_popup',
-      'weight' => 46,
+      'weight' => 14,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-voices-field_image_key_image'.
+  $field_instances['node-voices-field_image_key_image'] = array(
+    'bundle' => 'voices',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'image',
+        'settings' => array(
+          'conditions' => array(),
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 8,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_image_key_image',
+    'label' => 'Header Image',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'default_image' => 0,
+      'file_directory' => '',
+      'file_extensions' => 'png gif jpg jpeg',
+      'filefield_paths' => array(
+        'active_updating' => 0,
+        'file_name' => array(
+          'options' => array(
+            'pathauto' => 0,
+            'transliterate' => 0,
+          ),
+          'value' => '[file:ffp-name-only-original].[file:ffp-extension-original]',
+        ),
+        'file_path' => array(
+          'options' => array(
+            'pathauto' => 0,
+            'transliterate' => 0,
+          ),
+          'value' => '',
+        ),
+        'replace_existing_files' => 0,
+        'retroactive_update' => 0,
+      ),
+      'filefield_paths_enabled' => 1,
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'image',
+      'settings' => array(
+        'preview_image_style' => 'thumbnail',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'image_image',
+      'weight' => 26,
     ),
     'workbench_access_field' => 0,
   );
@@ -246,7 +439,330 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 44,
+      'weight' => 13,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-voices-field_link_key_audio'.
+  $field_instances['node-voices-field_link_key_audio'] = array(
+    'bundle' => 'voices',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'link',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'link_default',
+        'weight' => 6,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_link_key_audio',
+    'label' => 'Key Audio',
+    'required' => 0,
+    'settings' => array(
+      'absolute_url' => 1,
+      'attributes' => array(
+        'class' => '',
+        'configurable_class' => 0,
+        'configurable_title' => 0,
+        'rel' => '',
+        'target' => 'default',
+        'title' => '',
+      ),
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
+      'rel_remove' => 'default',
+      'title' => 'optional',
+      'title_label_use_field_label' => 0,
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
+      'user_register_form' => FALSE,
+      'validate_url' => 1,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
+      'weight' => 17,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-voices-field_link_key_video'.
+  $field_instances['node-voices-field_link_key_video'] = array(
+    'bundle' => 'voices',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'link',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'link_default',
+        'weight' => 7,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_link_key_video',
+    'label' => 'Key Video',
+    'required' => 0,
+    'settings' => array(
+      'absolute_url' => 1,
+      'attributes' => array(
+        'class' => '',
+        'configurable_class' => 0,
+        'configurable_title' => 0,
+        'rel' => '',
+        'target' => 'default',
+        'title' => '',
+      ),
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
+      'rel_remove' => 'default',
+      'title' => 'optional',
+      'title_label_use_field_label' => 0,
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
+      'user_register_form' => FALSE,
+      'validate_url' => 1,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
+      'weight' => 18,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-voices-field_link_single'.
+  $field_instances['node-voices-field_link_single'] = array(
+    'bundle' => 'voices',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'link',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'link_default',
+        'weight' => 5,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_link_single',
+    'label' => 'Short URL',
+    'required' => 0,
+    'settings' => array(
+      'absolute_url' => 1,
+      'attributes' => array(
+        'class' => '',
+        'configurable_class' => 0,
+        'configurable_title' => 0,
+        'rel' => '',
+        'target' => 'default',
+        'title' => '',
+      ),
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
+      'rel_remove' => 'default',
+      'title' => 'optional',
+      'title_label_use_field_label' => 0,
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
+      'user_register_form' => FALSE,
+      'validate_url' => 1,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
+      'weight' => 16,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-voices-field_location'.
+  $field_instances['node-voices-field_location'] = array(
+    'bundle' => 'voices',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Format: City, State/Province, Country (example: New York, NY, USA)',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'text_default',
+        'weight' => 10,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_location',
+    'label' => 'Hometown or Location',
+    'required' => 0,
+    'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          'act' => 'act',
+          'full_html' => 'full_html',
+          'gsb_html_text' => 'gsb_html_text',
+          'gsb_wysiwyg_text' => 'gsb_wysiwyg_text',
+          'image_resource_caption' => 'image_resource_caption',
+          'image_text_equivalent' => 'image_text_equivalent',
+          'markdown' => 'markdown',
+          'markdown_lite_minus_resources' => 'markdown_lite_minus_resources',
+          'markdown_plus_iframe' => 'markdown_plus_iframe',
+          'paragraphed_plain_text' => 'paragraphed_plain_text',
+          'plain_text' => 'plain_text',
+          'sidebar' => 'sidebar',
+          'slideshow' => 'slideshow',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            'act' => array(
+              'weight' => 0,
+            ),
+            'full_html' => array(
+              'weight' => 1,
+            ),
+            'gsb_html_text' => array(
+              'weight' => -9,
+            ),
+            'gsb_wysiwyg_text' => array(
+              'weight' => -10,
+            ),
+            'image_resource_caption' => array(
+              'weight' => 0,
+            ),
+            'image_text_equivalent' => array(
+              'weight' => 0,
+            ),
+            'markdown' => array(
+              'weight' => 0,
+            ),
+            'markdown_lite_minus_resources' => array(
+              'weight' => 0,
+            ),
+            'markdown_plus_iframe' => array(
+              'weight' => 0,
+            ),
+            'paragraphed_plain_text' => array(
+              'weight' => 0,
+            ),
+            'plain_text' => array(
+              'weight' => 10,
+            ),
+            'sidebar' => array(
+              'weight' => 0,
+            ),
+            'slideshow' => array(
+              'weight' => 0,
+            ),
+          ),
+        ),
+      ),
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'maxlength_js' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 30,
     ),
     'workbench_access_field' => 0,
   );
@@ -299,18 +815,189 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'checkall' => FALSE,
       ),
       'type' => 'options_buttons',
-      'weight' => 42,
+      'weight' => 12,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-voices-field_professional_experience'.
+  $field_instances['node-voices-field_professional_experience'] = array(
+    'bundle' => 'voices',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'text_default',
+        'weight' => 12,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_professional_experience',
+    'label' => 'Professional Experience',
+    'required' => 0,
+    'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          'act' => 'act',
+          'full_html' => 'full_html',
+          'gsb_html_text' => 'gsb_html_text',
+          'gsb_wysiwyg_text' => 'gsb_wysiwyg_text',
+          'image_resource_caption' => 'image_resource_caption',
+          'image_text_equivalent' => 'image_text_equivalent',
+          'markdown' => 'markdown',
+          'markdown_lite_minus_resources' => 'markdown_lite_minus_resources',
+          'markdown_plus_iframe' => 'markdown_plus_iframe',
+          'paragraphed_plain_text' => 'paragraphed_plain_text',
+          'plain_text' => 'plain_text',
+          'sidebar' => 'sidebar',
+          'slideshow' => 'slideshow',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            'act' => array(
+              'weight' => 0,
+            ),
+            'full_html' => array(
+              'weight' => 1,
+            ),
+            'gsb_html_text' => array(
+              'weight' => -9,
+            ),
+            'gsb_wysiwyg_text' => array(
+              'weight' => -10,
+            ),
+            'image_resource_caption' => array(
+              'weight' => 0,
+            ),
+            'image_text_equivalent' => array(
+              'weight' => 0,
+            ),
+            'markdown' => array(
+              'weight' => 0,
+            ),
+            'markdown_lite_minus_resources' => array(
+              'weight' => 0,
+            ),
+            'markdown_plus_iframe' => array(
+              'weight' => 0,
+            ),
+            'paragraphed_plain_text' => array(
+              'weight' => 0,
+            ),
+            'plain_text' => array(
+              'weight' => 10,
+            ),
+            'sidebar' => array(
+              'weight' => 0,
+            ),
+            'slideshow' => array(
+              'weight' => 0,
+            ),
+          ),
+        ),
+      ),
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'maxlength_js' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 32,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-voices-field_slideshow_style'.
+  $field_instances['node-voices-field_slideshow_style'] = array(
+    'bundle' => 'voices',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'list_default',
+        'weight' => 9,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_slideshow_style',
+    'label' => 'Background Color',
+    'required' => 0,
+    'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'use_hierarchical_select_lite' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 27,
     ),
     'workbench_access_field' => 0,
   );
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Background Color');
   t('Body');
   t('Byline');
+  t('Education');
+  t('Format: City, State/Province, Country (example: New York, NY, USA)');
+  t('Header Image');
+  t('Hometown or Location');
+  t('Key Audio');
+  t('Key Video');
   t('List Image');
   t('Person Type');
+  t('Professional Experience');
   t('Publication Date');
+  t('Short URL');
   t('Use a cropped version of the full header image for this image.');
 
   return $field_instances;

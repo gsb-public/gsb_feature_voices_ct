@@ -40,22 +40,22 @@ function gsb_feature_voices_ct_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '40',
+          'weight' => '3',
         ),
         'title' => array(
-          'weight' => '-5',
+          'weight' => '19',
         ),
         'path' => array(
-          'weight' => '30',
+          'weight' => '2',
         ),
         'redirect' => array(
-          'weight' => '30',
+          'weight' => '5',
         ),
         'workbench_access' => array(
-          'weight' => '0',
+          'weight' => '11',
         ),
         'xmlsitemap' => array(
-          'weight' => '30',
+          'weight' => '4',
         ),
       ),
       'display' => array(),
