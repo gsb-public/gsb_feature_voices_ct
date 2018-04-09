@@ -14,6 +14,7 @@ dependencies[] = image
 dependencies[] = link
 dependencies[] = list
 dependencies[] = options
+dependencies[] = pathauto_title_alias
 dependencies[] = strongarm
 dependencies[] = taxonomy
 dependencies[] = text
