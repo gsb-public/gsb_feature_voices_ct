@@ -124,6 +124,7 @@ function gsb_feature_voices_ct_field_group_info() {
       0 => 'body',
       1 => 'field_image_key_image',
       2 => 'field_slideshow_style',
+      3 => 'field_quote',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
