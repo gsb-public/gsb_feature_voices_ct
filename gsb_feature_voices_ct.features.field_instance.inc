@@ -170,7 +170,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 42,
+      'weight' => 48,
     ),
     'workbench_access_field' => 0,
   );
@@ -1157,9 +1157,49 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 41,
+      'weight' => 47,
     ),
     'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-voices-field_pathauto_title_alias'.
+  $field_instances['node-voices-field_pathauto_title_alias'] = array(
+    'bundle' => 'voices',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'pathauto_title_alias',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'pathauto_title_alias_default',
+        'weight' => 18,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_pathauto_title_alias',
+    'label' => 'URL Alias',
+    'required' => FALSE,
+    'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'pathauto_title_alias',
+      'settings' => array(),
+      'type' => 'pathauto_title_alias_form',
+      'weight' => 45,
+    ),
   );
 
   // Exported field_instance: 'node-voices-field_person_type'.
@@ -1326,7 +1366,153 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 43,
+      'weight' => 49,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-voices-field_profile_links'.
+  $field_instances['node-voices-field_profile_links'] = array(
+    'bundle' => 'voices',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'link',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'link_default',
+        'weight' => 19,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_profile_links',
+    'label' => 'Profile Links',
+    'required' => 0,
+    'settings' => array(
+      'absolute_url' => 1,
+      'attributes' => array(
+        'class' => '',
+        'configurable_class' => 0,
+        'configurable_title' => 0,
+        'rel' => '',
+        'target' => '_blank',
+        'title' => '',
+      ),
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
+      'rel_remove' => 'default',
+      'title' => 'optional',
+      'title_label_use_field_label' => 0,
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
+      'user_register_form' => FALSE,
+      'validate_url' => 1,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
+      'weight' => 25,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-voices-field_profile_photo'.
+  $field_instances['node-voices-field_profile_photo'] = array(
+    'bundle' => 'voices',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'image',
+        'settings' => array(
+          'conditions' => array(),
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 17,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_profile_photo',
+    'label' => 'Profile Photo',
+    'required' => 1,
+    'settings' => array(
+      'alt_field' => 1,
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'default_image' => 0,
+      'file_directory' => '',
+      'file_extensions' => 'png gif jpg jpeg',
+      'filefield_paths' => array(
+        'active_updating' => 0,
+        'file_name' => array(
+          'options' => array(
+            'pathauto' => 0,
+            'transliterate' => 0,
+          ),
+          'value' => '[file:ffp-name-only-original].[file:ffp-extension-original]',
+        ),
+        'file_path' => array(
+          'options' => array(
+            'pathauto' => 0,
+            'transliterate' => 0,
+          ),
+          'value' => '',
+        ),
+        'replace_existing_files' => 0,
+        'retroactive_update' => 0,
+      ),
+      'filefield_paths_enabled' => 1,
+      'max_filesize' => '',
+      'max_resolution' => '140x140',
+      'min_resolution' => '140x140',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'image',
+      'settings' => array(
+        'preview_image_style' => 'thumbnail',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'image_image',
+      'weight' => 24,
     ),
     'workbench_access_field' => 0,
   );
@@ -1397,8 +1583,11 @@ function gsb_feature_voices_ct_field_default_field_instances() {
   t('List Image');
   t('Person Type');
   t('Professional Experience');
+  t('Profile Links');
+  t('Profile Photo');
   t('Publication Date');
   t('Short URL');
+  t('URL Alias');
   t('Use a cropped version of the full header image for this image.');
 
   return $field_instances;

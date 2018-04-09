@@ -89,8 +89,10 @@ function gsb_feature_voices_ct_field_group_info() {
       0 => 'field_first_name',
       1 => 'field_last_name',
       2 => 'field_degree_year',
-      3 => 'title',
-      4 => 'field_centers_research_programs',
+      3 => 'field_centers_research_programs',
+      4 => 'field_profile_photo',
+      5 => 'field_profile_links',
+      6 => 'title',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
