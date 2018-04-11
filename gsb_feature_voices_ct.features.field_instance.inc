@@ -533,7 +533,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_first_name',
     'label' => 'First Name',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'better_formats' => array(
         'allowed_formats' => array(
@@ -848,7 +848,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_last_name',
     'label' => 'Last Name',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'better_formats' => array(
         'allowed_formats' => array(
