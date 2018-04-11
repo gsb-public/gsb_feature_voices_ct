@@ -31,6 +31,7 @@ function gsb_feature_voices_ct_field_group_info() {
       5 => 'field_link_single',
       6 => 'field_person_type',
       7 => 'workbench_access',
+      8 => 'group_taxonomy',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -47,6 +48,35 @@ function gsb_feature_voices_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_alumni_story|node|voices|form';
+  $field_group->group_name = 'group_alumni_story';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'voices';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_taxonomy';
+  $field_group->data = array(
+    'label' => 'Alumni Story',
+    'weight' => '52',
+    'children' => array(
+      0 => 'field_program_unlimited',
+      1 => 'field_alumni_story',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'formatter' => 'collapsible',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => 'group-alumni-story field-group-fieldset',
+        'required_fields' => 1,
+        'id' => '',
+      ),
+    ),
+  );
+  $field_groups['group_alumni_story|node|voices|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_background_and_related|node|voices|form';
   $field_group->group_name = 'group_background_and_related';
   $field_group->entity_type = 'node';
@@ -55,7 +85,7 @@ function gsb_feature_voices_ct_field_group_info() {
   $field_group->parent_name = 'group_tabs';
   $field_group->data = array(
     'label' => 'Background and Related',
-    'weight' => '4',
+    'weight' => '5',
     'children' => array(
       0 => 'field_academic_degrees_unlimited',
       1 => 'field_location',
@@ -84,7 +114,7 @@ function gsb_feature_voices_ct_field_group_info() {
   $field_group->parent_name = 'group_tabs';
   $field_group->data = array(
     'label' => 'Except Faculty',
-    'weight' => '2',
+    'weight' => '3',
     'children' => array(
       0 => 'field_first_name',
       1 => 'field_last_name',
@@ -119,7 +149,7 @@ function gsb_feature_voices_ct_field_group_info() {
   $field_group->parent_name = 'group_tabs';
   $field_group->data = array(
     'label' => 'Header and Body',
-    'weight' => '3',
+    'weight' => '4',
     'children' => array(
       0 => 'body',
       1 => 'field_image_key_image',
@@ -167,12 +197,74 @@ function gsb_feature_voices_ct_field_group_info() {
   );
   $field_groups['group_tabs|node|voices|form'] = $field_group;
 
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_tags|node|voices|form';
+  $field_group->group_name = 'group_tags';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'voices';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_taxonomy';
+  $field_group->data = array(
+    'label' => 'Tags',
+    'weight' => '55',
+    'children' => array(
+      0 => 'field_tag',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'formatter' => 'collapsible',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => 'group-tags field-group-fieldset',
+        'required_fields' => 1,
+        'id' => '',
+      ),
+    ),
+  );
+  $field_groups['group_tags|node|voices|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_taxonomy|node|voices|form';
+  $field_group->group_name = 'group_taxonomy';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'voices';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_administration';
+  $field_group->data = array(
+    'label' => 'Taxonomy',
+    'weight' => '19',
+    'children' => array(
+      0 => 'field_industry',
+      1 => 'field_region_of_interest',
+      2 => 'group_alumni_story',
+      3 => 'group_tags',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'formatter' => 'collapsible',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => 'group-taxonomy field-group-fieldset',
+        'required_fields' => 1,
+        'id' => '',
+      ),
+    ),
+  );
+  $field_groups['group_taxonomy|node|voices|form'] = $field_group;
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Administration');
+  t('Alumni Story');
   t('Background and Related');
   t('Except Faculty');
   t('Header and Body');
+  t('Tags');
+  t('Taxonomy');
   t('Top Tabs');
 
   return $field_groups;

@@ -175,6 +175,57 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
+  // Exported field_instance: 'node-voices-field_alumni_story'.
+  $field_instances['node-voices-field_alumni_story'] = array(
+    'bundle' => 'voices',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'list_default',
+        'weight' => 22,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_alumni_story',
+    'label' => 'Mentioned',
+    'required' => 0,
+    'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 0,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 61,
+    ),
+    'workbench_access_field' => 0,
+  );
+
   // Exported field_instance: 'node-voices-field_authors'.
   $field_instances['node-voices-field_authors'] = array(
     'bundle' => 'voices',
@@ -266,7 +317,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 23,
+      'weight' => 60,
     ),
     'workbench_access_field' => 0,
   );
@@ -448,7 +499,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 22,
+      'weight' => 56,
     ),
     'workbench_access_field' => 0,
   );
@@ -564,7 +615,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 20,
+      'weight' => 54,
     ),
     'workbench_access_field' => 0,
   );
@@ -723,6 +774,51 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
+  // Exported field_instance: 'node-voices-field_industry'.
+  $field_instances['node-voices-field_industry'] = array(
+    'bundle' => 'voices',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 23,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_industry',
+    'label' => 'Industry',
+    'required' => 0,
+    'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'hs_taxonomy',
+      'settings' => array(),
+      'type' => 'taxonomy_hs',
+      'weight' => 53,
+    ),
+    'workbench_access_field' => 0,
+  );
+
   // Exported field_instance: 'node-voices-field_last_name'.
   $field_instances['node-voices-field_last_name'] = array(
     'bundle' => 'voices',
@@ -834,7 +930,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 21,
+      'weight' => 55,
     ),
     'workbench_access_field' => 0,
   );
@@ -1245,11 +1341,11 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'options',
+      'module' => 'hs_taxonomy',
       'settings' => array(
         'checkall' => FALSE,
       ),
-      'type' => 'options_buttons',
+      'type' => 'taxonomy_hs',
       'weight' => 12,
     ),
     'workbench_access_field' => 0,
@@ -1435,7 +1531,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 26,
+      'weight' => 59,
     ),
     'workbench_access_field' => 0,
   );
@@ -1512,7 +1608,53 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 24,
+      'weight' => 57,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-voices-field_program_unlimited'.
+  $field_instances['node-voices-field_program_unlimited'] = array(
+    'bundle' => 'voices',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 21,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_program_unlimited',
+    'label' => 'Program',
+    'required' => 0,
+    'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'use_hierarchical_select_lite' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 62,
     ),
     'workbench_access_field' => 0,
   );
@@ -1635,6 +1777,51 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
+  // Exported field_instance: 'node-voices-field_region_of_interest'.
+  $field_instances['node-voices-field_region_of_interest'] = array(
+    'bundle' => 'voices',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 24,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_region_of_interest',
+    'label' => 'Region',
+    'required' => 0,
+    'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'hs_taxonomy',
+      'settings' => array(),
+      'type' => 'taxonomy_hs',
+      'weight' => 54,
+    ),
+    'workbench_access_field' => 0,
+  );
+
   // Exported field_instance: 'node-voices-field_slideshow_style'.
   $field_instances['node-voices-field_slideshow_style'] = array(
     'bundle' => 'voices',
@@ -1681,6 +1868,54 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
+  // Exported field_instance: 'node-voices-field_tag'.
+  $field_instances['node-voices-field_tag'] = array(
+    'bundle' => 'voices',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 25,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_tag',
+    'label' => 'Keywords',
+    'required' => 0,
+    'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'taxonomy',
+      'settings' => array(
+        'autocomplete_path' => 'taxonomy/autocomplete',
+        'size' => 60,
+      ),
+      'type' => 'taxonomy_autocomplete',
+      'weight' => 64,
+    ),
+    'workbench_access_field' => 0,
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Background Color');
@@ -1695,16 +1930,21 @@ function gsb_feature_voices_ct_field_default_field_instances() {
 (example: MBA ’18 | Seed Transformation Program ’19)');
   t('Header Image');
   t('Hometown or Location');
+  t('Industry');
   t('Key Audio');
   t('Key Video');
+  t('Keywords');
   t('Last Name');
   t('List Image');
+  t('Mentioned');
   t('Person Type');
   t('Professional Experience');
   t('Profile Links');
   t('Profile Photo');
+  t('Program');
   t('Publication Date');
   t('Quote');
+  t('Region');
   t('Short URL');
   t('URL Alias');
   t('Use a cropped version of the full header image for this image.');

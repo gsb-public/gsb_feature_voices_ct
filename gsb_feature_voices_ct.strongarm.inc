@@ -43,7 +43,7 @@ function gsb_feature_voices_ct_strongarm() {
           'weight' => '3',
         ),
         'title' => array(
-          'weight' => '19',
+          'weight' => '53',
         ),
         'path' => array(
           'weight' => '2',
