@@ -58,8 +58,8 @@ function gsb_feature_voices_ct_field_group_info() {
     'label' => 'Alumni Story',
     'weight' => '52',
     'children' => array(
-      0 => 'field_program_unlimited',
-      1 => 'field_alumni_story',
+      0 => 'field_alumni_story',
+      1 => 'field_program_unlimited',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -116,12 +116,12 @@ function gsb_feature_voices_ct_field_group_info() {
     'label' => 'Except Faculty',
     'weight' => '3',
     'children' => array(
-      0 => 'field_first_name',
-      1 => 'field_last_name',
-      2 => 'field_degree_year',
-      3 => 'field_centers_research_programs',
-      4 => 'field_profile_photo',
-      5 => 'field_profile_links',
+      0 => 'field_centers_research_programs',
+      1 => 'field_degree_year',
+      2 => 'field_first_name',
+      3 => 'field_last_name',
+      4 => 'field_profile_links',
+      5 => 'field_profile_photo',
       6 => 'title',
     ),
     'format_type' => 'fieldset',
@@ -153,8 +153,8 @@ function gsb_feature_voices_ct_field_group_info() {
     'children' => array(
       0 => 'body',
       1 => 'field_image_key_image',
-      2 => 'field_slideshow_style',
-      3 => 'field_quote',
+      2 => 'field_quote',
+      3 => 'field_slideshow_style',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -183,8 +183,8 @@ function gsb_feature_voices_ct_field_group_info() {
     'children' => array(
       0 => 'group_administration',
       1 => 'group_background_and_related',
-      2 => 'group_header_and_body',
-      3 => 'group_except_faculty',
+      2 => 'group_except_faculty',
+      3 => 'group_header_and_body',
     ),
     'format_type' => 'htabs',
     'format_settings' => array(

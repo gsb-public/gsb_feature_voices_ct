@@ -13,6 +13,27 @@ function gsb_feature_voices_ct_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'auto_entitylabel_node_voices';
+  $strongarm->value = '1';
+  $export['auto_entitylabel_node_voices'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'auto_entitylabel_pattern_node_voices';
+  $strongarm->value = '[field_full_name]';
+  $export['auto_entitylabel_pattern_node_voices'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'auto_entitylabel_php_node_voices';
+  $strongarm->value = 0;
+  $export['auto_entitylabel_php_node_voices'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'diff_enable_revisions_page_node_voices';
   $strongarm->value = 1;
   $export['diff_enable_revisions_page_node_voices'] = $strongarm;

@@ -620,6 +620,50 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
+  // Exported field_instance: 'node-voices-field_full_name'.
+  $field_instances['node-voices-field_full_name'] = array(
+    'bundle' => 'voices',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'computed_field',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'computed_field_plain',
+        'weight' => 26,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_full_name',
+    'label' => 'Full name',
+    'required' => 0,
+    'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'computed_field',
+      'settings' => array(),
+      'type' => 'computed',
+      'weight' => 66,
+    ),
+    'workbench_access_field' => 0,
+  );
+
   // Exported field_instance: 'node-voices-field_image_key_image'.
   $field_instances['node-voices-field_image_key_image'] = array(
     'bundle' => 'voices',
@@ -1928,6 +1972,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
   t('Format: City, State/Province, Country (example: New York, NY, USA)');
   t('Format: Degree or Program, ’YY
 (example: MBA ’18 | Seed Transformation Program ’19)');
+  t('Full name');
   t('Header Image');
   t('Hometown or Location');
   t('Industry');
