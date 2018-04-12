@@ -21,15 +21,17 @@ function gsb_feature_voices_ct_install() {
     'PhD Student',
     'MBA Alumni',
     'MsX/Sloan Alumni',
-    'Executive Education Participant' =>
-      array(
-        'SEP',
-        'Ignite',
-        'LEAD'
-      ),
+    'Executive Education Participant',
     'Seed Transformation Program Participant',
     'Faculty',
   ];
+
+//  =>
+//  array(
+//    'SEP',
+//    'Ignite',
+//    'LEAD'
+//  ),
   foreach ($items as $key => $item) {
     if(is_array($item)) {
       $parent = custom_create_taxonomy_term($key, $taxonomy_person->vid);

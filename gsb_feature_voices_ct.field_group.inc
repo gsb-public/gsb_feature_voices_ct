@@ -31,7 +31,8 @@ function gsb_feature_voices_ct_field_group_info() {
       5 => 'field_link_single',
       6 => 'field_person_type',
       7 => 'workbench_access',
-      8 => 'group_taxonomy',
+      8 => 'group_except_faculty',
+      9 => 'group_taxonomy',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -106,23 +107,51 @@ function gsb_feature_voices_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_centers|node|voices|form';
+  $field_group->group_name = 'group_centers';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'voices';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_except_faculty';
+  $field_group->data = array(
+    'label' => 'Centers',
+    'weight' => '60',
+    'children' => array(
+      0 => 'field_centers_research_programs',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'formatter' => 'collapsible',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => 'group-centers field-group-fieldset',
+        'required_fields' => 1,
+        'id' => '',
+      ),
+    ),
+  );
+  $field_groups['group_centers|node|voices|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_except_faculty|node|voices|form';
   $field_group->group_name = 'group_except_faculty';
   $field_group->entity_type = 'node';
   $field_group->bundle = 'voices';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_tabs';
+  $field_group->parent_name = 'group_administration';
   $field_group->data = array(
     'label' => 'Except Faculty',
-    'weight' => '3',
+    'weight' => '20',
     'children' => array(
-      0 => 'field_centers_research_programs',
-      1 => 'field_degree_year',
-      2 => 'field_first_name',
-      3 => 'field_last_name',
-      4 => 'field_profile_links',
-      5 => 'field_profile_photo',
-      6 => 'title',
+      0 => 'field_degree_year',
+      1 => 'field_first_name',
+      2 => 'field_last_name',
+      3 => 'field_profile_links',
+      4 => 'field_profile_photo',
+      5 => 'title',
+      6 => 'group_centers',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -151,10 +180,10 @@ function gsb_feature_voices_ct_field_group_info() {
     'label' => 'Header and Body',
     'weight' => '4',
     'children' => array(
-      0 => 'body',
-      1 => 'field_image_key_image',
-      2 => 'field_quote',
-      3 => 'field_slideshow_style',
+      0 => 'field_image_key_image',
+      1 => 'field_quote',
+      2 => 'field_slideshow_style',
+      3 => 'field_body',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -183,8 +212,7 @@ function gsb_feature_voices_ct_field_group_info() {
     'children' => array(
       0 => 'group_administration',
       1 => 'group_background_and_related',
-      2 => 'group_except_faculty',
-      3 => 'group_header_and_body',
+      2 => 'group_header_and_body',
     ),
     'format_type' => 'htabs',
     'format_settings' => array(
@@ -261,6 +289,7 @@ function gsb_feature_voices_ct_field_group_info() {
   t('Administration');
   t('Alumni Story');
   t('Background and Related');
+  t('Centers');
   t('Except Faculty');
   t('Header and Body');
   t('Tags');
