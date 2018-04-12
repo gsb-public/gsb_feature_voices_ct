@@ -3,6 +3,7 @@ description = GSB Feature Voices CT
 core = 7.x
 package = GSB
 version = 7.x-6.51
+dependencies[] = computed_field
 dependencies[] = ctools
 dependencies[] = date
 dependencies[] = features
