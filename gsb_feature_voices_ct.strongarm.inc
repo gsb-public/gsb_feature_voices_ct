@@ -61,7 +61,7 @@ function gsb_feature_voices_ct_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '3',
+          'weight' => '2',
         ),
         'title' => array(
           'weight' => '53',
@@ -76,7 +76,7 @@ function gsb_feature_voices_ct_strongarm() {
           'weight' => '11',
         ),
         'xmlsitemap' => array(
-          'weight' => '4',
+          'weight' => '3',
         ),
       ),
       'display' => array(),

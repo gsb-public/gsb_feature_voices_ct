@@ -91,6 +91,7 @@ function gsb_feature_voices_ct_field_group_info() {
       0 => 'field_academic_degrees_unlimited',
       1 => 'field_location',
       2 => 'field_professional_experience',
+      3 => 'group_related_content',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -180,10 +181,10 @@ function gsb_feature_voices_ct_field_group_info() {
     'label' => 'Header and Body',
     'weight' => '4',
     'children' => array(
-      0 => 'field_image_key_image',
-      1 => 'field_quote',
-      2 => 'field_slideshow_style',
-      3 => 'field_body',
+      0 => 'field_body',
+      1 => 'field_image_key_image',
+      2 => 'field_quote',
+      3 => 'field_slideshow_style',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -196,6 +197,40 @@ function gsb_feature_voices_ct_field_group_info() {
     ),
   );
   $field_groups['group_header_and_body|node|voices|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_related_content|node|voices|form';
+  $field_group->group_name = 'group_related_content';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'voices';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_background_and_related';
+  $field_group->data = array(
+    'label' => 'Related Content',
+    'weight' => '52',
+    'children' => array(
+      0 => 'field_related_faculty',
+      1 => 'field_person_ref_unlimited',
+      2 => 'field_related_programs',
+      3 => 'field_related_idea_story',
+      4 => 'field_related_other_unlimited',
+      5 => 'field_link_unlimited',
+      6 => 'field_file_unlimited_public',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'formatter' => 'collapsible',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => 'group-related-content field-group-fieldset',
+        'required_fields' => 1,
+        'id' => '',
+      ),
+    ),
+  );
+  $field_groups['group_related_content|node|voices|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -292,6 +327,7 @@ function gsb_feature_voices_ct_field_group_info() {
   t('Centers');
   t('Except Faculty');
   t('Header and Body');
+  t('Related Content');
   t('Tags');
   t('Taxonomy');
   t('Top Tabs');
