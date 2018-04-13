@@ -605,9 +605,9 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'settings' => array(
       'custom_add_another' => '',
       'custom_remove' => '',
-      'description_field' => 0,
+      'description_field' => 1,
       'file_directory' => '',
-      'file_extensions' => 'txt',
+      'file_extensions' => 'pdf doc docx xlsx xls ppt pptx txt odf ods odp',
       'filefield_paths' => array(
         'active_updating' => 0,
         'file_name' => array(
@@ -1362,7 +1362,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'configurable_class' => 0,
         'configurable_title' => 0,
         'rel' => '',
-        'target' => 'default',
+        'target' => 'user',
         'title' => '',
       ),
       'custom_add_another' => '',
@@ -2218,7 +2218,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
       'settings' => array(
         'match_operator' => 'CONTAINS',
         'path' => '',
-        'size' => 60,
+        'size' => 120,
       ),
       'type' => 'entityreference_autocomplete',
       'weight' => 70,
