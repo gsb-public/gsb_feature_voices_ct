@@ -64,7 +64,7 @@ function gsb_feature_voices_ct_strongarm() {
           'weight' => '2',
         ),
         'title' => array(
-          'weight' => '53',
+          'weight' => '52',
         ),
         'path' => array(
           'weight' => '1',
@@ -76,7 +76,7 @@ function gsb_feature_voices_ct_strongarm() {
           'weight' => '11',
         ),
         'xmlsitemap' => array(
-          'weight' => '3',
+          'weight' => '4',
         ),
       ),
       'display' => array(),

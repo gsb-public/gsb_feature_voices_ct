@@ -5,3 +5,66 @@
  */
 
 include_once 'gsb_feature_voices_ct.features.inc';
+
+function gsb_feature_voices_ct_form_alter(&$form, &$form_state) {
+
+  if ($form['#form_id'] == 'voices_node_form') {
+
+    $person_types_index = $form['field_person_type']['und']['#options'];
+    foreach ($person_types_index as $key => $person_type) {
+      if ($person_type == 'MBA Student') {
+
+      } elseif ($person_type == 'Sloan Fellow') {
+
+        $field_condition['field_title_position_single'][] = array('value' => $key);
+
+      } elseif ($person_type == 'PhD Student') {
+
+        //field_field_of_study (new)
+
+      } elseif ($person_type == 'MBA Alumni' || $person_type == 'MsX/Sloan Alumni') {
+
+        $field_condition['field_title_position_single'][] = array('value' => $key);
+        $field_condition['field_alumni_directory_link'][] = array('value' => $key);
+
+      } elseif ($person_type == 'Executive Education Participant') {
+
+        $field_condition['field_title_position_single'][] = array('value' => $key);
+        $field_condition['field_program_attended'][] = array('value' => $key);
+        $field_condition['field_alumni_directory_link'][] = array('value' => $key);
+
+      } elseif ($person_type == 'Seed Transformation Program Participant') {
+
+        $field_condition['field_title_position_single'][] = array('value' => $key);
+        $field_condition['field_program_attended'][] = array('value' => $key);
+
+      } elseif ($person_type == 'Faculty') {
+
+      }
+
+    }
+
+    $form['field_title_position_single']['#states'] = array(
+      'visible' => array(
+        'input[name="field_person_type[und]"]' => $field_condition['field_title_position_single'],
+      )
+    );
+
+    $form['field_alumni_directory_link']['#states'] = array(
+      'visible' => array(
+        'input[name="field_person_type[und]"]' => $field_condition['field_alumni_directory_link'],
+      )
+    );
+
+    $form['field_program_attended']['#states'] = array(
+      'visible' => array(
+        'input[name="field_person_type[und]"]' => $field_condition['field_program_attended'],
+      )
+    );
+
+    dpm($form);
+    dpm($person_types_index);
+    dpm($field_condition);
+  }
+
+};

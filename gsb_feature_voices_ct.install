@@ -4,18 +4,14 @@
  * Add some terms to the Category vocabulary.
  */
 function gsb_feature_voices_ct_install() {
-  $new_vocab = (object) array(
+  $person_type_vocab = (object) array(
     'name' => 'Person Type',
     'description' => '',
     'machine_name' => 'person_type',
   );
-  taxonomy_vocabulary_save($new_vocab);
-  // Machine name of the Taxonomy vocabulary.
-  $vocab = 'person_type';
-  $taxonomy_person = taxonomy_vocabulary_machine_name_load($vocab);
+  taxonomy_vocabulary_save($person_type_vocab);
 
-  // Term names to be added.
-  $items = [
+  $person_types = [
     'MBA Student',
     'Sloan Fellow',
     'PhD Student',
@@ -25,21 +21,44 @@ function gsb_feature_voices_ct_install() {
     'Seed Transformation Program Participant',
     'Faculty',
   ];
+  process_term_array('person_type', $person_types);
 
+  $field_of_study_vocab = (object) array(
+    'name' => 'Field of Study',
+    'description' => '',
+    'machine_name' => 'field_of_study',
+  );
+  taxonomy_vocabulary_save($field_of_study_vocab);
+
+  $fields_of_study = [
+    'Accounting',
+    'Economic Analysis & Policy',
+    'Finance',
+    'Marketing',
+    'Operations, Information & Technology',
+    'Organizational Behavior',
+    'Political Economics',
+  ];
+  process_term_array('field_of_study', $fields_of_study);
 //  =>
 //  array(
 //    'SEP',
 //    'Ignite',
 //    'LEAD'
 //  ),
-  foreach ($items as $key => $item) {
-    if(is_array($item)) {
-      $parent = custom_create_taxonomy_term($key, $taxonomy_person->vid);
-      foreach($item as $subterm) {
-        custom_create_taxonomy_term($subterm, $taxonomy_person->vid, $parent);
+
+}
+
+function process_term_array($vocab, $terms) {
+  $taxonomy = taxonomy_vocabulary_machine_name_load($vocab);
+  foreach ($terms as $key => $term) {
+    if(is_array($term)) {
+      $parent = custom_create_taxonomy_term($key, $taxonomy->vid);
+      foreach($term as $subterm) {
+        custom_create_taxonomy_term($subterm, $taxonomy->vid, $parent);
       }
     } else {
-      custom_create_taxonomy_term($item, $taxonomy_person->vid);
+      custom_create_taxonomy_term($term, $taxonomy->vid);
     }
   }
 }

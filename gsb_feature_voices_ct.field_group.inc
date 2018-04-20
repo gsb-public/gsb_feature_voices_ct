@@ -30,9 +30,10 @@ function gsb_feature_voices_ct_field_group_info() {
       4 => 'field_link_key_video',
       5 => 'field_link_single',
       6 => 'field_person_type',
-      7 => 'workbench_access',
-      8 => 'group_except_faculty',
-      9 => 'group_taxonomy',
+      7 => 'field_title_position_single',
+      8 => 'workbench_access',
+      9 => 'group_except_faculty',
+      10 => 'group_taxonomy',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -91,7 +92,9 @@ function gsb_feature_voices_ct_field_group_info() {
       0 => 'field_academic_degrees_unlimited',
       1 => 'field_location',
       2 => 'field_professional_experience',
-      3 => 'group_related_content',
+      3 => 'field_alumni_directory_link',
+      4 => 'field_program_attended',
+      5 => 'group_related_content',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -116,7 +119,7 @@ function gsb_feature_voices_ct_field_group_info() {
   $field_group->parent_name = 'group_except_faculty';
   $field_group->data = array(
     'label' => 'Centers',
-    'weight' => '60',
+    'weight' => '58',
     'children' => array(
       0 => 'field_centers_research_programs',
     ),
@@ -144,7 +147,7 @@ function gsb_feature_voices_ct_field_group_info() {
   $field_group->parent_name = 'group_administration';
   $field_group->data = array(
     'label' => 'Except Faculty',
-    'weight' => '20',
+    'weight' => '21',
     'children' => array(
       0 => 'field_degree_year',
       1 => 'field_first_name',
@@ -209,15 +212,15 @@ function gsb_feature_voices_ct_field_group_info() {
   $field_group->parent_name = 'group_background_and_related';
   $field_group->data = array(
     'label' => 'Related Content',
-    'weight' => '52',
+    'weight' => '54',
     'children' => array(
-      0 => 'field_related_faculty',
-      1 => 'field_person_ref_unlimited',
-      2 => 'field_related_programs',
-      3 => 'field_related_idea_story',
-      4 => 'field_related_other_unlimited',
-      5 => 'field_link_unlimited',
-      6 => 'field_file_unlimited_public',
+      0 => 'field_file_unlimited_public',
+      1 => 'field_link_unlimited',
+      2 => 'field_person_ref_unlimited',
+      3 => 'field_related_faculty',
+      4 => 'field_related_idea_story',
+      5 => 'field_related_other_unlimited',
+      6 => 'field_related_programs',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -271,7 +274,7 @@ function gsb_feature_voices_ct_field_group_info() {
   $field_group->parent_name = 'group_taxonomy';
   $field_group->data = array(
     'label' => 'Tags',
-    'weight' => '55',
+    'weight' => '56',
     'children' => array(
       0 => 'field_tag',
     ),
@@ -299,7 +302,7 @@ function gsb_feature_voices_ct_field_group_info() {
   $field_group->parent_name = 'group_administration';
   $field_group->data = array(
     'label' => 'Taxonomy',
-    'weight' => '19',
+    'weight' => '20',
     'children' => array(
       0 => 'field_industry',
       1 => 'field_region_of_interest',
