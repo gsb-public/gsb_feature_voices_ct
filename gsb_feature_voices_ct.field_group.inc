@@ -32,11 +32,12 @@ function gsb_feature_voices_ct_field_group_info() {
       6 => 'field_link_key_audio',
       7 => 'field_link_key_video',
       8 => 'field_link_single',
-      9 => 'field_person_fac_ref',
-      10 => 'field_person_type',
-      11 => 'field_title_position_single',
-      12 => 'workbench_access',
-      13 => 'group_taxonomy',
+      9 => 'field_person_type',
+      10 => 'field_title_position_single',
+      11 => 'field_person_type_execed',
+      12 => 'field_person_fac_single_ref',
+      13 => 'workbench_access',
+      14 => 'group_taxonomy',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -308,7 +309,7 @@ function gsb_feature_voices_ct_field_group_info() {
   $field_group->parent_name = 'group_administration';
   $field_group->data = array(
     'label' => 'Taxonomy',
-    'weight' => '24',
+    'weight' => '26',
     'children' => array(
       0 => 'field_centers_research_programs',
       1 => 'field_industry',

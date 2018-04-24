@@ -6,6 +6,12 @@
 
 include_once 'gsb_feature_voices_ct.features.inc';
 
+
+drupal_add_css(
+  'form#voices-node-form .form-radios span.form-required { display: none !important; }',
+  array('group' => 'gsb_theme_admin', 'type' => 'inline')
+);
+
 /**
  * Implements hook_form_alter().
  *
@@ -40,6 +46,7 @@ function gsb_feature_voices_ct_form_alter(&$form, &$form_state) {
         $field_condition['field_title_position_single'][] = array('value' => $key);
         $field_condition['field_program_attended'][] = array('value' => $key);
         $field_condition['field_alumni_directory_link'][] = array('value' => $key);
+        $field_condition['field_person_type_execed'][] = array('value' => $key);
 
       } elseif ($person_type == 'Seed Transformation Program Participant') {
 
@@ -52,10 +59,10 @@ function gsb_feature_voices_ct_form_alter(&$form, &$form_state) {
         $field_condition_hidden['field_last_name'][] = array('value' => $key);
         $field_condition_hidden['field_degree_year'][] = array('value' => $key);
         $field_condition_hidden['field_profile_photo'][] = array('value' => $key);
-        $field_condition_hidden['field_profile_links'][] = array('value' => $key);
-        $field_condition_hidden['field_centers_research_programs'][] = array('value' => $key);
+        $field_condition_hidden_opt['field_profile_links'][] = array('value' => $key);
+        $field_condition_hidden_opt['field_centers_research_programs'][] = array('value' => $key);
 
-        $field_condition['field_person_fac_ref'][] = array('value' => $key);
+        $field_condition['field_person_fac_single_ref'][] = array('value' => $key);
 
 
       } else {
@@ -65,18 +72,34 @@ function gsb_feature_voices_ct_form_alter(&$form, &$form_state) {
     }
 
     foreach($field_condition as $field => $condition) {
-      $form[$field]['#states'] = array(
-        'visible' => array(
-          'input[name="field_person_type[und]"]' => $field_condition[$field],
-        )
-      );
+      $form[$field]['#states'] = [
+        'visible' => [
+          ':input[name="field_person_type[und]"]' => $field_condition[$field],
+        ],
+        'required' => [
+          ':input[name="field_person_type[und]"]' => $field_condition[$field],
+        ]
+      ];
     }
+
+
+    foreach($field_condition_hidden_opt as $field => $condition) {
+      $form[$field]['#states'] = [
+        'invisible' => [
+          ':input[name="field_person_type[und]"]' => $field_condition_hidden_opt[$field],
+        ],
+      ];
+    }
+
 
     if(isset($field_condition_hidden)){
       foreach ($field_condition_hidden as $field => $condition) {
         $form[$field]['#states'] = [
           'invisible' => [
-            'input[name="field_person_type[und]"]' => $field_condition_hidden[$field],
+            ':input[name="field_person_type[und]"]' => $field_condition_hidden[$field],
+          ],
+          'optional' => [
+            ':input[name="field_person_type[und]"]' => $field_condition_hidden[$field],
           ]
         ];
       }

@@ -131,7 +131,11 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'bundle' => 'voices',
     'custom_add_another' => '',
     'custom_remove' => '',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -155,7 +159,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_alumni_directory_link',
     'label' => 'Alumni Directory Link',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'custom_add_another' => '',
       'custom_remove' => '',
@@ -269,7 +273,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
       'module' => 'field_collection',
       'settings' => array(),
       'type' => 'field_collection_embed',
-      'weight' => 20,
+      'weight' => 22,
     ),
     'workbench_access_field' => 0,
   );
@@ -498,7 +502,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_popup',
-      'weight' => 19,
+      'weight' => 21,
     ),
     'workbench_access_field' => 0,
   );
@@ -533,7 +537,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_degree_year',
     'label' => 'Degree & Year',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'better_formats' => array(
         'allowed_formats' => array(
@@ -615,7 +619,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 16,
+      'weight' => 18,
     ),
     'workbench_access_field' => 0,
   );
@@ -649,7 +653,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_field_of_study',
     'label' => 'Field of Study',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'checkall' => array(
         'checkall' => 0,
@@ -772,7 +776,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_first_name',
     'label' => 'First Name',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'better_formats' => array(
         'allowed_formats' => array(
@@ -854,7 +858,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 13,
+      'weight' => 14,
     ),
     'workbench_access_field' => 0,
   );
@@ -1052,7 +1056,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 18,
+      'weight' => 20,
     ),
     'workbench_access_field' => 0,
   );
@@ -1131,7 +1135,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_last_name',
     'label' => 'Last Name',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'better_formats' => array(
         'allowed_formats' => array(
@@ -1213,7 +1217,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 14,
+      'weight' => 15,
     ),
     'workbench_access_field' => 0,
   );
@@ -1282,7 +1286,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 22,
+      'weight' => 24,
     ),
     'workbench_access_field' => 0,
   );
@@ -1351,7 +1355,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 23,
+      'weight' => 25,
     ),
     'workbench_access_field' => 0,
   );
@@ -1420,7 +1424,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 21,
+      'weight' => 23,
     ),
     'workbench_access_field' => 0,
   );
@@ -1650,8 +1654,8 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-voices-field_person_fac_ref'.
-  $field_instances['node-voices-field_person_fac_ref'] = array(
+  // Exported field_instance: 'node-voices-field_person_fac_single_ref'.
+  $field_instances['node-voices-field_person_fac_single_ref'] = array(
     'bundle' => 'voices',
     'custom_add_another' => '',
     'custom_remove' => '',
@@ -1668,7 +1672,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 37,
+        'weight' => 39,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1679,9 +1683,9 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     ),
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
-    'field_name' => 'field_person_fac_ref',
+    'field_name' => 'field_person_fac_single_ref',
     'label' => 'Faculty Name',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'custom_add_another' => '',
       'custom_remove' => '',
@@ -1696,7 +1700,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 15,
+      'weight' => 17,
     ),
     'workbench_access_field' => 0,
   );
@@ -1801,6 +1805,59 @@ function gsb_feature_voices_ct_field_default_field_instances() {
       ),
       'type' => 'options_buttons',
       'weight' => 12,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-voices-field_person_type_execed'.
+  $field_instances['node-voices-field_person_type_execed'] = array(
+    'bundle' => 'voices',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 38,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_person_type_execed',
+    'label' => 'Person Type ExecEd',
+    'required' => 0,
+    'settings' => array(
+      'checkall' => array(
+        'checkall' => 0,
+        'checkall-check-all' => 1,
+        'checkall-toggle' => 1,
+        'checkall-uncheck-all' => 1,
+      ),
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'checkall' => FALSE,
+      ),
+      'type' => 'options_buttons',
+      'weight' => 13,
     ),
     'workbench_access_field' => 0,
   );
@@ -1928,7 +1985,8 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'custom_remove' => '',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => '<b>Title</b> text field is for the link text. 
+Format: [FIRST NAME] on [SITE]',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -2020,7 +2078,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_profile_photo',
     'label' => 'Profile Photo',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'alt_field' => 1,
       'custom_add_another' => '',
@@ -2652,7 +2710,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_title_position_single',
     'label' => 'Job Title & Organization',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'better_formats' => array(
         'allowed_formats' => array(
@@ -2734,13 +2792,15 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 17,
+      'weight' => 19,
     ),
     'workbench_access_field' => 0,
   );
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('<b>Title</b> text field is for the link text. 
+Format: [FIRST NAME] on [SITE]');
   t('Alumni Directory Link');
   t('Background Color');
   t('Body');
@@ -2772,6 +2832,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
   t('Mentioned');
   t('People');
   t('Person Type');
+  t('Person Type ExecEd');
   t('Professional Experience');
   t('Profile Links');
   t('Profile Photo');
