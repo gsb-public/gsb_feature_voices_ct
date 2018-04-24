@@ -121,54 +121,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'size' => 240,
       ),
       'type' => 'text_textfield',
-      'weight' => 50,
-    ),
-    'workbench_access_field' => 0,
-  );
-
-  // Exported field_instance: 'node-voices-field_alumni_directory_link'.
-  $field_instances['node-voices-field_alumni_directory_link'] = array(
-    'bundle' => 'voices',
-    'custom_add_another' => '',
-    'custom_remove' => '',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'list_default',
-        'weight' => 36,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_alumni_directory_link',
-    'label' => 'Alumni Directory Link',
-    'required' => 1,
-    'settings' => array(
-      'custom_add_another' => '',
-      'custom_remove' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'display_label' => 1,
-      ),
-      'type' => 'options_onoff',
-      'weight' => 52,
+      'weight' => 54,
     ),
     'workbench_access_field' => 0,
   );
@@ -269,7 +222,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
       'module' => 'field_collection',
       'settings' => array(),
       'type' => 'field_collection_embed',
-      'weight' => 16,
+      'weight' => 20,
     ),
     'workbench_access_field' => 0,
   );
@@ -387,7 +340,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 65,
+      'weight' => 67,
     ),
     'workbench_access_field' => 0,
   );
@@ -420,7 +373,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_centers_research_programs',
-    'label' => 'Circle (Centers and Research Programs',
+    'label' => 'Circle (Centers and Research Programs)',
     'required' => 0,
     'settings' => array(
       'custom_add_another' => '',
@@ -433,7 +386,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 21,
+      'weight' => 68,
     ),
     'workbench_access_field' => 0,
   );
@@ -498,7 +451,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_popup',
-      'weight' => 15,
+      'weight' => 19,
     ),
     'workbench_access_field' => 0,
   );
@@ -615,7 +568,60 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 55,
+      'weight' => 16,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-voices-field_field_of_study'.
+  $field_instances['node-voices-field_field_of_study'] = array(
+    'bundle' => 'voices',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 36,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_field_of_study',
+    'label' => 'Field of Study',
+    'required' => 1,
+    'settings' => array(
+      'checkall' => array(
+        'checkall' => 0,
+        'checkall-check-all' => 1,
+        'checkall-toggle' => 1,
+        'checkall-uncheck-all' => 1,
+      ),
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'checkall' => FALSE,
+      ),
+      'type' => 'options_buttons',
+      'weight' => 52,
     ),
     'workbench_access_field' => 0,
   );
@@ -685,7 +691,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'file_generic',
-      'weight' => 77,
+      'weight' => 81,
     ),
     'workbench_access_field' => 0,
   );
@@ -801,7 +807,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 53,
+      'weight' => 13,
     ),
     'workbench_access_field' => 0,
   );
@@ -922,7 +928,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 62,
+      'weight' => 64,
     ),
     'workbench_access_field' => 0,
   );
@@ -999,7 +1005,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 14,
+      'weight' => 18,
     ),
     'workbench_access_field' => 0,
   );
@@ -1044,7 +1050,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
       'module' => 'hs_taxonomy',
       'settings' => array(),
       'type' => 'taxonomy_hs',
-      'weight' => 53,
+      'weight' => 65,
     ),
     'workbench_access_field' => 0,
   );
@@ -1160,7 +1166,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 54,
+      'weight' => 14,
     ),
     'workbench_access_field' => 0,
   );
@@ -1229,7 +1235,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 18,
+      'weight' => 22,
     ),
     'workbench_access_field' => 0,
   );
@@ -1298,7 +1304,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 19,
+      'weight' => 23,
     ),
     'workbench_access_field' => 0,
   );
@@ -1367,7 +1373,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 17,
+      'weight' => 21,
     ),
     'workbench_access_field' => 0,
   );
@@ -1436,7 +1442,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 76,
+      'weight' => 80,
     ),
     'workbench_access_field' => 0,
   );
@@ -1552,7 +1558,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 49,
+      'weight' => 51,
     ),
     'workbench_access_field' => 0,
   );
@@ -1593,8 +1599,59 @@ function gsb_feature_voices_ct_field_default_field_instances() {
       'module' => 'pathauto_title_alias',
       'settings' => array(),
       'type' => 'pathauto_title_alias_form',
-      'weight' => 6,
+      'weight' => 5,
     ),
+  );
+
+  // Exported field_instance: 'node-voices-field_person_fac_ref'.
+  $field_instances['node-voices-field_person_fac_ref'] = array(
+    'bundle' => 'voices',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'bypass_access' => FALSE,
+          'conditions' => array(),
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 37,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_person_fac_ref',
+    'label' => 'Faculty Name',
+    'required' => 0,
+    'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 15,
+    ),
+    'workbench_access_field' => 0,
   );
 
   // Exported field_instance: 'node-voices-field_person_ref_unlimited'.
@@ -1643,7 +1700,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 72,
+      'weight' => 75,
     ),
     'workbench_access_field' => 0,
   );
@@ -1812,7 +1869,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'size' => 240,
       ),
       'type' => 'text_textfield',
-      'weight' => 51,
+      'weight' => 55,
     ),
     'workbench_access_field' => 0,
   );
@@ -1881,7 +1938,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 57,
+      'weight' => 53,
     ),
     'workbench_access_field' => 0,
   );
@@ -1958,58 +2015,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 56,
-    ),
-    'workbench_access_field' => 0,
-  );
-
-  // Exported field_instance: 'node-voices-field_program_attended'.
-  $field_instances['node-voices-field_program_attended'] = array(
-    'bundle' => 'voices',
-    'custom_add_another' => '',
-    'custom_remove' => '',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'bypass_access' => FALSE,
-          'conditions' => array(),
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 37,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_program_attended',
-    'label' => 'Program Attended',
-    'required' => 0,
-    'settings' => array(
-      'custom_add_another' => '',
-      'custom_remove' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'entityreference',
-      'settings' => array(
-        'match_operator' => 'CONTAINS',
-        'path' => '',
-        'size' => 60,
-      ),
-      'type' => 'entityreference_autocomplete',
-      'weight' => 53,
+      'weight' => 50,
     ),
     'workbench_access_field' => 0,
   );
@@ -2173,7 +2179,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 64,
+      'weight' => 66,
     ),
     'workbench_access_field' => 0,
   );
@@ -2218,7 +2224,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
       'module' => 'hs_taxonomy',
       'settings' => array(),
       'type' => 'taxonomy_hs',
-      'weight' => 55,
+      'weight' => 66,
     ),
     'workbench_access_field' => 0,
   );
@@ -2268,7 +2274,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
       'module' => 'field_collection',
       'settings' => array(),
       'type' => 'field_collection_embed',
-      'weight' => 71,
+      'weight' => 74,
     ),
     'workbench_access_field' => 0,
   );
@@ -2319,7 +2325,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'size' => 120,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 74,
+      'weight' => 77,
     ),
     'workbench_access_field' => 0,
   );
@@ -2369,7 +2375,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
       'module' => 'field_collection',
       'settings' => array(),
       'type' => 'field_collection_embed',
-      'weight' => 75,
+      'weight' => 79,
     ),
     'workbench_access_field' => 0,
   );
@@ -2420,7 +2426,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 73,
+      'weight' => 76,
     ),
     'workbench_access_field' => 0,
   );
@@ -2466,7 +2472,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 63,
+      'weight' => 65,
     ),
     'workbench_access_field' => 0,
   );
@@ -2514,7 +2520,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 64,
+      'weight' => 22,
     ),
     'workbench_access_field' => 0,
   );
@@ -2630,21 +2636,22 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 13,
+      'weight' => 17,
     ),
     'workbench_access_field' => 0,
   );
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Alumni Directory Link');
   t('Background Color');
   t('Body');
   t('Byline');
-  t('Circle (Centers and Research Programs');
+  t('Circle (Centers and Research Programs)');
   t('Degree & Year');
   t('Education');
   t('Faculty');
+  t('Faculty Name');
+  t('Field of Study');
   t('Files');
   t('First Name');
   t('Format: City, State/Province, Country (example: New York, NY, USA)');
@@ -2670,7 +2677,6 @@ function gsb_feature_voices_ct_field_default_field_instances() {
   t('Profile Links');
   t('Profile Photo');
   t('Program');
-  t('Program Attended');
   t('Programs');
   t('Publication Date');
   t('Publication or Event');

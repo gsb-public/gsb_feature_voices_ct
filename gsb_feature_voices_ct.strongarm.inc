@@ -64,19 +64,19 @@ function gsb_feature_voices_ct_strongarm() {
           'weight' => '2',
         ),
         'title' => array(
-          'weight' => '52',
+          'weight' => '6',
         ),
         'path' => array(
           'weight' => '1',
         ),
         'redirect' => array(
-          'weight' => '5',
+          'weight' => '4',
         ),
         'workbench_access' => array(
           'weight' => '11',
         ),
         'xmlsitemap' => array(
-          'weight' => '4',
+          'weight' => '3',
         ),
       ),
       'display' => array(),

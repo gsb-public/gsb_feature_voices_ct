@@ -6,10 +6,18 @@
 
 include_once 'gsb_feature_voices_ct.features.inc';
 
+/**
+ * Implements hook_form_alter().
+ *
+ * Update form based on taxonomy options.
+ *
+ * @param $form
+ * @param $form_state
+ */
 function gsb_feature_voices_ct_form_alter(&$form, &$form_state) {
 
   if ($form['#form_id'] == 'voices_node_form') {
-
+    // Get the list of taxonomy terms and set conditions
     $person_types_index = $form['field_person_type']['und']['#options'];
     foreach ($person_types_index as $key => $person_type) {
       if ($person_type == 'MBA Student') {
@@ -20,7 +28,7 @@ function gsb_feature_voices_ct_form_alter(&$form, &$form_state) {
 
       } elseif ($person_type == 'PhD Student') {
 
-        //field_field_of_study (new)
+        $field_condition['field_field_of_study'][] = array('value' => $key);
 
       } elseif ($person_type == 'MBA Alumni' || $person_type == 'MsX/Sloan Alumni') {
 
@@ -40,31 +48,39 @@ function gsb_feature_voices_ct_form_alter(&$form, &$form_state) {
 
       } elseif ($person_type == 'Faculty') {
 
+        $field_condition_hidden['field_first_name'][] = array('value' => $key);
+        $field_condition_hidden['field_last_name'][] = array('value' => $key);
+        $field_condition_hidden['field_degree_year'][] = array('value' => $key);
+        $field_condition_hidden['field_profile_photo'][] = array('value' => $key);
+        $field_condition_hidden['field_profile_links'][] = array('value' => $key);
+        $field_condition_hidden['field_centers_research_programs'][] = array('value' => $key);
+
+        $field_condition['field_person_fac_ref'][] = array('value' => $key);
+
+
+      } else {
+        drupal_set_message('Selected taxonomy term not defined in gsb_features_voices_ct', 'error');
       }
 
     }
 
-    $form['field_title_position_single']['#states'] = array(
-      'visible' => array(
-        'input[name="field_person_type[und]"]' => $field_condition['field_title_position_single'],
-      )
-    );
+    foreach($field_condition as $field => $condition) {
+      $form[$field]['#states'] = array(
+        'visible' => array(
+          'input[name="field_person_type[und]"]' => $field_condition[$field],
+        )
+      );
+    }
 
-    $form['field_alumni_directory_link']['#states'] = array(
-      'visible' => array(
-        'input[name="field_person_type[und]"]' => $field_condition['field_alumni_directory_link'],
-      )
-    );
-
-    $form['field_program_attended']['#states'] = array(
-      'visible' => array(
-        'input[name="field_person_type[und]"]' => $field_condition['field_program_attended'],
-      )
-    );
-
-    dpm($form);
-    dpm($person_types_index);
-    dpm($field_condition);
+    if(isset($field_condition_hidden)){
+      foreach ($field_condition_hidden as $field => $condition) {
+        $form[$field]['#states'] = [
+          'invisible' => [
+            'input[name="field_person_type[und]"]' => $field_condition_hidden[$field],
+          ]
+        ];
+      }
+    };
   }
 
 };

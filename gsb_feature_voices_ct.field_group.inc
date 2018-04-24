@@ -25,15 +25,18 @@ function gsb_feature_voices_ct_field_group_info() {
     'children' => array(
       0 => 'field_authors',
       1 => 'field_date',
-      2 => 'field_image_single_public',
-      3 => 'field_link_key_audio',
-      4 => 'field_link_key_video',
-      5 => 'field_link_single',
-      6 => 'field_person_type',
-      7 => 'field_title_position_single',
-      8 => 'workbench_access',
-      9 => 'group_except_faculty',
-      10 => 'group_taxonomy',
+      2 => 'field_degree_year',
+      3 => 'field_first_name',
+      4 => 'field_image_single_public',
+      5 => 'field_last_name',
+      6 => 'field_link_key_audio',
+      7 => 'field_link_key_video',
+      8 => 'field_link_single',
+      9 => 'field_person_type',
+      10 => 'field_title_position_single',
+      11 => 'field_person_fac_ref',
+      12 => 'workbench_access',
+      13 => 'group_taxonomy',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -58,7 +61,7 @@ function gsb_feature_voices_ct_field_group_info() {
   $field_group->parent_name = 'group_taxonomy';
   $field_group->data = array(
     'label' => 'Alumni Story',
-    'weight' => '52',
+    'weight' => '64',
     'children' => array(
       0 => 'field_alumni_story',
       1 => 'field_program_unlimited',
@@ -87,14 +90,15 @@ function gsb_feature_voices_ct_field_group_info() {
   $field_group->parent_name = 'group_tabs';
   $field_group->data = array(
     'label' => 'Background and Related',
-    'weight' => '5',
+    'weight' => '3',
     'children' => array(
       0 => 'field_academic_degrees_unlimited',
       1 => 'field_location',
       2 => 'field_professional_experience',
-      3 => 'field_alumni_directory_link',
-      4 => 'field_program_attended',
-      5 => 'group_related_content',
+      3 => 'field_profile_links',
+      4 => 'field_profile_photo',
+      5 => 'field_field_of_study',
+      6 => 'group_related_content',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -109,7 +113,7 @@ function gsb_feature_voices_ct_field_group_info() {
   $field_groups['group_background_and_related|node|voices|form'] = $field_group;
 
   $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->disabled = TRUE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_centers|node|voices|form';
   $field_group->group_name = 'group_centers';
@@ -137,7 +141,7 @@ function gsb_feature_voices_ct_field_group_info() {
   $field_groups['group_centers|node|voices|form'] = $field_group;
 
   $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->disabled = TRUE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_except_faculty|node|voices|form';
   $field_group->group_name = 'group_except_faculty';
@@ -182,7 +186,7 @@ function gsb_feature_voices_ct_field_group_info() {
   $field_group->parent_name = 'group_tabs';
   $field_group->data = array(
     'label' => 'Header and Body',
-    'weight' => '4',
+    'weight' => '2',
     'children' => array(
       0 => 'field_body',
       1 => 'field_image_key_image',
@@ -212,7 +216,7 @@ function gsb_feature_voices_ct_field_group_info() {
   $field_group->parent_name = 'group_background_and_related';
   $field_group->data = array(
     'label' => 'Related Content',
-    'weight' => '54',
+    'weight' => '57',
     'children' => array(
       0 => 'field_file_unlimited_public',
       1 => 'field_link_unlimited',
@@ -274,7 +278,7 @@ function gsb_feature_voices_ct_field_group_info() {
   $field_group->parent_name = 'group_taxonomy';
   $field_group->data = array(
     'label' => 'Tags',
-    'weight' => '56',
+    'weight' => '67',
     'children' => array(
       0 => 'field_tag',
     ),
@@ -302,12 +306,13 @@ function gsb_feature_voices_ct_field_group_info() {
   $field_group->parent_name = 'group_administration';
   $field_group->data = array(
     'label' => 'Taxonomy',
-    'weight' => '20',
+    'weight' => '24',
     'children' => array(
-      0 => 'field_industry',
-      1 => 'field_region_of_interest',
-      2 => 'group_alumni_story',
-      3 => 'group_tags',
+      0 => 'field_centers_research_programs',
+      1 => 'field_industry',
+      2 => 'field_region_of_interest',
+      3 => 'group_alumni_story',
+      4 => 'group_tags',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(

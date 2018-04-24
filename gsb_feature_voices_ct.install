@@ -6,7 +6,7 @@
 function gsb_feature_voices_ct_install() {
   $person_type_vocab = (object) array(
     'name' => 'Person Type',
-    'description' => '',
+    'description' => 'Types of people configured for voices content type',
     'machine_name' => 'person_type',
   );
   taxonomy_vocabulary_save($person_type_vocab);
@@ -21,7 +21,21 @@ function gsb_feature_voices_ct_install() {
     'Seed Transformation Program Participant',
     'Faculty',
   ];
-  process_term_array('person_type', $person_types);
+  gsb_feature_voices_ct_process_term_array('person_type', $person_types);
+
+  $person_type_execed_vocab = (object) array(
+    'name' => 'Person Type - ExecEd',
+    'description' => 'Executive Education people types',
+    'machine_name' => 'person_type_execed',
+  );
+  taxonomy_vocabulary_save($person_type_execed_vocab);
+
+  $person_types_execed = [
+    'SEP',
+    'Ignite',
+    'LEAD',
+  ];
+  gsb_feature_voices_ct_process_term_array('person_type_execed', $person_types_execed);
 
   $field_of_study_vocab = (object) array(
     'name' => 'Field of Study',
@@ -39,40 +53,24 @@ function gsb_feature_voices_ct_install() {
     'Organizational Behavior',
     'Political Economics',
   ];
-  process_term_array('field_of_study', $fields_of_study);
-//  =>
-//  array(
-//    'SEP',
-//    'Ignite',
-//    'LEAD'
-//  ),
-
+  gsb_feature_voices_ct_process_term_array('field_of_study', $fields_of_study);
 }
 
-function process_term_array($vocab, $terms) {
+function gsb_feature_voices_ct_process_term_array($vocab, $terms) {
   $taxonomy = taxonomy_vocabulary_machine_name_load($vocab);
   foreach ($terms as $key => $term) {
-    if(is_array($term)) {
-      $parent = custom_create_taxonomy_term($key, $taxonomy->vid);
-      foreach($term as $subterm) {
-        custom_create_taxonomy_term($subterm, $taxonomy->vid, $parent);
-      }
-    } else {
-      custom_create_taxonomy_term($term, $taxonomy->vid);
-    }
+    gsb_feature_voices_ct_custom_create_taxonomy_term($term, $taxonomy->vid, $key);
   }
 }
 
 /**
  * Create a taxonomy term and return the tid.
  */
-function custom_create_taxonomy_term($name, $vid, $parent = NULL) {
+function gsb_feature_voices_ct_custom_create_taxonomy_term($name, $vid, $weight) {
   $term = new stdClass();
   $term->name = $name;
   $term->vid = $vid;
-  if (isset($parent)) {
-    $term->parent = $parent;
-  }
+  $term->weight = $weight;
   taxonomy_term_save($term);
   return $term->tid;
 }
