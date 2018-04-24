@@ -64,13 +64,13 @@ function gsb_feature_voices_ct_strongarm() {
           'weight' => '2',
         ),
         'title' => array(
-          'weight' => '6',
+          'weight' => '7',
         ),
         'path' => array(
           'weight' => '1',
         ),
         'redirect' => array(
-          'weight' => '4',
+          'weight' => '5',
         ),
         'workbench_access' => array(
           'weight' => '11',

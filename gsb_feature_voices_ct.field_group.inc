@@ -32,9 +32,9 @@ function gsb_feature_voices_ct_field_group_info() {
       6 => 'field_link_key_audio',
       7 => 'field_link_key_video',
       8 => 'field_link_single',
-      9 => 'field_person_type',
-      10 => 'field_title_position_single',
-      11 => 'field_person_fac_ref',
+      9 => 'field_person_fac_ref',
+      10 => 'field_person_type',
+      11 => 'field_title_position_single',
       12 => 'workbench_access',
       13 => 'group_taxonomy',
     ),
@@ -98,7 +98,9 @@ function gsb_feature_voices_ct_field_group_info() {
       3 => 'field_profile_links',
       4 => 'field_profile_photo',
       5 => 'field_field_of_study',
-      6 => 'group_related_content',
+      6 => 'field_alumni_directory_link',
+      7 => 'field_program_attended',
+      8 => 'group_related_content',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -216,7 +218,7 @@ function gsb_feature_voices_ct_field_group_info() {
   $field_group->parent_name = 'group_background_and_related';
   $field_group->data = array(
     'label' => 'Related Content',
-    'weight' => '57',
+    'weight' => '58',
     'children' => array(
       0 => 'field_file_unlimited_public',
       1 => 'field_link_unlimited',
