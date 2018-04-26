@@ -76,7 +76,7 @@ function gsb_feature_voices_ct_strongarm() {
           'weight' => '11',
         ),
         'xmlsitemap' => array(
-          'weight' => '3',
+          'weight' => '4',
         ),
       ),
       'display' => array(),

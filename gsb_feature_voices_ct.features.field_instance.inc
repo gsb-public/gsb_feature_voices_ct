@@ -121,7 +121,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'size' => 240,
       ),
       'type' => 'text_textfield',
-      'weight' => 55,
+      'weight' => 56,
     ),
     'workbench_access_field' => 0,
   );
@@ -273,7 +273,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
       'module' => 'field_collection',
       'settings' => array(),
       'type' => 'field_collection_embed',
-      'weight' => 22,
+      'weight' => 21,
     ),
     'workbench_access_field' => 0,
   );
@@ -391,7 +391,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 67,
+      'weight' => 68,
     ),
     'workbench_access_field' => 0,
   );
@@ -437,7 +437,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 68,
+      'weight' => 26,
     ),
     'workbench_access_field' => 0,
   );
@@ -502,7 +502,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_popup',
-      'weight' => 21,
+      'weight' => 20,
     ),
     'workbench_access_field' => 0,
   );
@@ -619,7 +619,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 18,
+      'weight' => 17,
     ),
     'workbench_access_field' => 0,
   );
@@ -742,7 +742,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'file_generic',
-      'weight' => 82,
+      'weight' => 83,
     ),
     'workbench_access_field' => 0,
   );
@@ -1056,7 +1056,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 20,
+      'weight' => 19,
     ),
     'workbench_access_field' => 0,
   );
@@ -1286,7 +1286,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 24,
+      'weight' => 23,
     ),
     'workbench_access_field' => 0,
   );
@@ -1355,7 +1355,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 25,
+      'weight' => 24,
     ),
     'workbench_access_field' => 0,
   );
@@ -1424,7 +1424,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 23,
+      'weight' => 22,
     ),
     'workbench_access_field' => 0,
   );
@@ -1700,7 +1700,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 17,
+      'weight' => 16,
     ),
     'workbench_access_field' => 0,
   );
@@ -1973,7 +1973,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'size' => 240,
       ),
       'type' => 'text_textfield',
-      'weight' => 56,
+      'weight' => 57,
     ),
     'workbench_access_field' => 0,
   );
@@ -2171,7 +2171,7 @@ Format: [FIRST NAME] on [SITE]',
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 57,
+      'weight' => 58,
     ),
     'workbench_access_field' => 0,
   );
@@ -2335,7 +2335,7 @@ Format: [FIRST NAME] on [SITE]',
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 66,
+      'weight' => 67,
     ),
     'workbench_access_field' => 0,
   );
@@ -2628,7 +2628,7 @@ Format: [FIRST NAME] on [SITE]',
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 65,
+      'weight' => 66,
     ),
     'workbench_access_field' => 0,
   );
@@ -2792,7 +2792,7 @@ Format: [FIRST NAME] on [SITE]',
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 19,
+      'weight' => 18,
     ),
     'workbench_access_field' => 0,
   );
