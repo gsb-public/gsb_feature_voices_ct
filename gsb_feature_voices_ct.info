@@ -12,7 +12,6 @@ dependencies[] = field_collection
 dependencies[] = field_group
 dependencies[] = file
 dependencies[] = filefield_paths
-dependencies[] = gsb_feature_base_fields
 dependencies[] = gsb_feature_seed_coach_ct
 dependencies[] = hs_taxonomy
 dependencies[] = image
