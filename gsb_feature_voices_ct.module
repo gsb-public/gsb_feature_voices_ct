@@ -6,12 +6,6 @@
 
 include_once 'gsb_feature_voices_ct.features.inc';
 
-
-drupal_add_css(
-  'form#voices-node-form .form-radios span.form-required { display: none !important; }',
-  array('group' => 'gsb_theme_admin', 'type' => 'inline')
-);
-
 /**
  * Implements hook_form_alter().
  *
@@ -23,6 +17,15 @@ drupal_add_css(
 function gsb_feature_voices_ct_form_alter(&$form, &$form_state) {
 
   if ($form['#form_id'] == 'voices_node_form') {
+    drupal_add_css(
+      'form#voices-node-form .form-radios span.form-required { display: none !important; }',
+      array('group' => 'gsb_theme_admin', 'type' => 'inline')
+    );
+
+    // Hide n/a option from exec-ed subtype selection
+    unset($form['field_person_type_execed']['und']['#options']['_none']);
+    unset($form['field_field_of_study']['und']['#options']['_none']);
+
     // Get the list of taxonomy terms and set conditions
     $person_types_index = $form['field_person_type']['und']['#options'];
     foreach ($person_types_index as $key => $person_type) {
@@ -61,14 +64,11 @@ function gsb_feature_voices_ct_form_alter(&$form, &$form_state) {
         $field_condition_hidden['field_profile_photo'][] = array('value' => $key);
         $field_condition_hidden_opt['field_profile_links'][] = array('value' => $key);
         $field_condition_hidden_opt['field_centers_research_programs'][] = array('value' => $key);
-
         $field_condition['field_person_fac_single_ref'][] = array('value' => $key);
-
 
       } else {
         drupal_set_message('Selected taxonomy term not defined in gsb_features_voices_ct', 'error');
       }
-
     }
 
     foreach($field_condition as $field => $condition) {
@@ -82,7 +82,6 @@ function gsb_feature_voices_ct_form_alter(&$form, &$form_state) {
       ];
     }
 
-
     foreach($field_condition_hidden_opt as $field => $condition) {
       $form[$field]['#states'] = [
         'invisible' => [
@@ -90,7 +89,6 @@ function gsb_feature_voices_ct_form_alter(&$form, &$form_state) {
         ],
       ];
     }
-
 
     if(isset($field_condition_hidden)){
       foreach ($field_condition_hidden as $field => $condition) {
