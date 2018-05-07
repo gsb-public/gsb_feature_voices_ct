@@ -62,7 +62,7 @@ function gsb_feature_voices_ct_field_group_info() {
   $field_group->mode = 'form';
   $field_group->parent_name = 'group_taxonomy';
   $field_group->data = array(
-    'label' => 'Alumni Story',
+    'label' => 'Alumni/Past Participant',
     'weight' => '64',
     'children' => array(
       0 => 'field_alumni_story',
@@ -70,12 +70,13 @@ function gsb_feature_voices_ct_field_group_info() {
     ),
     'format_type' => 'tab',
     'format_settings' => array(
-      'formatter' => 'closed',
+      'label' => 'Alumni/Past Participant',
       'instance_settings' => array(
-        'description' => '',
-        'classes' => '',
         'required_fields' => 1,
+        'classes' => '',
+        'description' => '',
       ),
+      'formatter' => 'closed',
     ),
   );
   $field_groups['group_alumni_story|node|voices|form'] = $field_group;
@@ -365,9 +366,9 @@ function gsb_feature_voices_ct_field_group_info() {
     'weight' => '25',
     'children' => array(
       0 => 'group_alumni_story',
-      1 => 'group_tags',
-      2 => 'group_industry',
-      3 => 'group_region',
+      1 => 'group_industry',
+      2 => 'group_region',
+      3 => 'group_tags',
     ),
     'format_type' => 'tabs',
     'format_settings' => array(
@@ -383,7 +384,7 @@ function gsb_feature_voices_ct_field_group_info() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Administration');
-  t('Alumni Story');
+  t('Alumni/Past Participant');
   t('Background and Related');
   t('Centers');
   t('Except Faculty');
