@@ -22,6 +22,13 @@ function gsb_feature_voices_ct_form_alter(&$form, &$form_state) {
       array('group' => 'gsb_theme_admin', 'type' => 'inline')
     );
 
+    // Do not show programs unless 'mentioned' checkbox is selected
+    $form['field_program_unlimited']['#states'] = [
+      'invisible' => [
+        ':input[name="field_alumni_story[und]"]' => array('checked' => FALSE),
+      ]
+    ];
+
     // Hide n/a option from exec-ed subtype selection
     unset($form['field_person_type_execed']['und']['#options']['_none']);
     unset($form['field_field_of_study']['und']['#options']['_none']);
