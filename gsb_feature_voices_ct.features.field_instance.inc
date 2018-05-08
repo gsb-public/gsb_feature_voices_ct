@@ -1685,7 +1685,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_person_fac_single_ref',
     'label' => 'Faculty Name',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'custom_add_another' => '',
       'custom_remove' => '',
