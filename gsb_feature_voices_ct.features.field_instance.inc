@@ -2251,7 +2251,7 @@ Format: [FIRST NAME] on [SITE]',
     'entity_type' => 'node',
     'field_name' => 'field_quote',
     'label' => 'Quote',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'better_formats' => array(
         'allowed_formats' => array(
