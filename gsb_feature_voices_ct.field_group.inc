@@ -274,7 +274,7 @@ function gsb_feature_voices_ct_field_group_info() {
   $field_group->parent_name = 'group_background_and_related';
   $field_group->data = array(
     'label' => 'Related Content',
-    'weight' => '59',
+    'weight' => '58',
     'children' => array(
       0 => 'field_file_unlimited_public',
       1 => 'field_link_unlimited',
