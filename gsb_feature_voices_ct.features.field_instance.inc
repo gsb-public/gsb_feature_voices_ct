@@ -172,7 +172,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 57,
+      'weight' => 58,
     ),
     'workbench_access_field' => 0,
   );
@@ -902,7 +902,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
       'module' => 'computed_field',
       'settings' => array(),
       'type' => 'computed',
-      'weight' => 8,
+      'weight' => 7,
     ),
     'workbench_access_field' => 0,
   );
@@ -1650,7 +1650,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
       'module' => 'pathauto_title_alias',
       'settings' => array(),
       'type' => 'pathauto_title_alias_form',
-      'weight' => 6,
+      'weight' => 27,
     ),
   );
 
@@ -2043,7 +2043,7 @@ Format: [FIRST NAME] on [SITE]',
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 56,
+      'weight' => 57,
     ),
     'workbench_access_field' => 0,
   );
@@ -2171,7 +2171,7 @@ Format: [FIRST NAME] on [SITE]',
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 55,
+      'weight' => 56,
     ),
     'workbench_access_field' => 0,
   );

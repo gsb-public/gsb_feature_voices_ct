@@ -32,13 +32,14 @@ function gsb_feature_voices_ct_field_group_info() {
       6 => 'field_link_key_audio',
       7 => 'field_link_key_video',
       8 => 'field_link_single',
-      9 => 'field_person_fac_single_ref',
-      10 => 'field_title_position_single',
-      11 => 'field_degree_year',
-      12 => 'field_person_type',
-      13 => 'field_person_type_execed',
-      14 => 'workbench_access',
-      15 => 'group_taxonomy',
+      9 => 'field_pathauto_title_alias',
+      10 => 'field_person_fac_single_ref',
+      11 => 'field_title_position_single',
+      12 => 'field_degree_year',
+      13 => 'field_person_type',
+      14 => 'field_person_type_execed',
+      15 => 'workbench_access',
+      16 => 'group_taxonomy',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -247,7 +248,7 @@ function gsb_feature_voices_ct_field_group_info() {
   $field_group->parent_name = 'group_taxonomy';
   $field_group->data = array(
     'label' => 'Region',
-    'weight' => '67',
+    'weight' => '66',
     'children' => array(
       0 => 'field_region_of_interest',
     ),
@@ -274,7 +275,7 @@ function gsb_feature_voices_ct_field_group_info() {
   $field_group->parent_name = 'group_background_and_related';
   $field_group->data = array(
     'label' => 'Related Content',
-    'weight' => '58',
+    'weight' => '59',
     'children' => array(
       0 => 'field_file_unlimited_public',
       1 => 'field_link_unlimited',
@@ -336,7 +337,7 @@ function gsb_feature_voices_ct_field_group_info() {
   $field_group->parent_name = 'group_taxonomy';
   $field_group->data = array(
     'label' => 'Tags',
-    'weight' => '68',
+    'weight' => '67',
     'children' => array(
       0 => 'field_tag',
     ),

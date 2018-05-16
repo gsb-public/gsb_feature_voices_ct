@@ -61,13 +61,13 @@ function gsb_feature_voices_ct_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '2',
+          'weight' => '3',
         ),
         'title' => array(
-          'weight' => '7',
+          'weight' => '6',
         ),
         'path' => array(
-          'weight' => '1',
+          'weight' => '2',
         ),
         'redirect' => array(
           'weight' => '5',

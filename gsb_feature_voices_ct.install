@@ -16,7 +16,7 @@ function gsb_feature_voices_ct_install() {
     'Sloan Fellow',
     'PhD Student',
     'MBA Alumni',
-    'MsX/Sloan Alumni',
+    'MSx/Sloan Alumni',
     'Executive Education Participant',
     'Seed Transformation Program Participant',
     'Faculty',
