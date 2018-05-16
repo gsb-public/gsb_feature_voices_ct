@@ -125,6 +125,34 @@ function gsb_feature_voices_ct_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_voices_pattern';
+  $strongarm->value = '[node:field_voices_path]/test/[node:title]';
+  $export['pathauto_node_voices_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_taxonomy_term_field_of_study_pattern';
+  $strongarm->value = '';
+  $export['pathauto_taxonomy_term_field_of_study_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_taxonomy_term_person_type_execed_pattern';
+  $strongarm->value = '';
+  $export['pathauto_taxonomy_term_person_type_execed_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_taxonomy_term_person_type_pattern';
+  $strongarm->value = '';
+  $export['pathauto_taxonomy_term_person_type_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'xmlsitemap_settings_node_voices';
   $strongarm->value = array(
     'status' => '0',

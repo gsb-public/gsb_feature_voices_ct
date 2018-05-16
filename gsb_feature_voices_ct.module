@@ -46,7 +46,7 @@ function gsb_feature_voices_ct_form_alter(&$form, &$form_state) {
 
         $field_condition['field_field_of_study'][] = array('value' => $key);
 
-      } elseif ($person_type == 'MBA Alumni' || $person_type == 'MsX/Sloan Alumni') {
+      } elseif ($person_type == 'MBA Alumni' || $person_type == 'MSx/Sloan Alumni') {
 
         $field_condition['field_title_position_single'][] = array('value' => $key);
         $field_condition['field_alumni_directory_link'][] = array('value' => $key);

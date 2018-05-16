@@ -2797,6 +2797,50 @@ Format: [FIRST NAME] on [SITE]',
     'workbench_access_field' => 0,
   );
 
+  // Exported field_instance: 'node-voices-field_voices_path'.
+  $field_instances['node-voices-field_voices_path'] = array(
+    'bundle' => 'voices',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'computed_field',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'computed_field_plain',
+        'weight' => 40,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_voices_path',
+    'label' => 'Voices Path',
+    'required' => 1,
+    'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'computed_field',
+      'settings' => array(),
+      'type' => 'computed',
+      'weight' => 83,
+    ),
+    'workbench_access_field' => 0,
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('<b>Title</b> text field is for the link text. 
@@ -2847,6 +2891,7 @@ Format: [FIRST NAME] on [SITE]');
   t('Story');
   t('URL Alias');
   t('Use a cropped version of the full header image for this image.');
+  t('Voices Path');
 
   return $field_instances;
 }
