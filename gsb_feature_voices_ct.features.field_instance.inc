@@ -2825,7 +2825,7 @@ Format: [FIRST NAME] on [SITE]',
     'entity_type' => 'node',
     'field_name' => 'field_voices_path',
     'label' => 'Voices Path',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'custom_add_another' => '',
       'custom_remove' => '',
