@@ -36,7 +36,7 @@ if ($person_type->name == \'MBA Student\') {
   $path = \'programs/phd/student-life/voices\';
 } elseif ($person_type->name == \'MBA Alumni\') {
   $path = \'programs/mba/alumni-community/voices/\';
-} elseif ($person_type->name == \'MSx/SloanAlumni\') {
+} elseif ($person_type->name == \'MSx/Sloan Alumni\') {
   $path = \'programs/msx/alumni-community/voices\';
 } elseif ($person_type->name == \'Executive Education Participant\') {
   $path = \'exec-ed/difference/voices\';
@@ -50,7 +50,7 @@ if ($person_type->name == \'MBA Student\') {
 $entity_field[0]["value"] = $path;',
       'database' => array(
         'data_default' => '',
-        'data_index' => 1,
+        'data_index' => 0,
         'data_length' => 256,
         'data_not_NULL' => 1,
         'data_precision' => 10,
