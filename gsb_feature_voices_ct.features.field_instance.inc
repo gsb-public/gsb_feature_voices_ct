@@ -146,7 +146,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'list_default',
-        'weight' => 36,
+        'weight' => 31,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -197,7 +197,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'list_default',
-        'weight' => 22,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -238,18 +238,18 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'field_collection',
         'settings' => array(
           'add' => 'Add',
           'conditions' => array(),
           'delete' => 'Delete',
-          'description' => TRUE,
+          'description' => 1,
           'edit' => 'Edit',
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_view',
-        'weight' => 4,
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -288,13 +288,13 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 27,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -407,12 +407,9 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 16,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 44,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -451,7 +448,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'date',
         'settings' => array(
           'conditions' => array(),
@@ -464,7 +461,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
-        'weight' => 3,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -518,13 +515,13 @@ function gsb_feature_voices_ct_field_default_field_instances() {
 (example: MBA ’18 | Seed Transformation Program ’19)',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 15,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -640,7 +637,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 36,
+        'weight' => 16,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -692,7 +689,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'file_default',
-        'weight' => 34,
+        'weight' => 30,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -758,12 +755,9 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'text_default',
-        'weight' => 13,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 39,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -872,13 +866,13 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'computed_field',
         'settings' => array(
           'conditions' => array(),
         ),
         'type' => 'computed_field_plain',
-        'weight' => 26,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -916,7 +910,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
           'conditions' => array(),
@@ -924,7 +918,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
           'image_style' => '',
         ),
         'type' => 'image',
-        'weight' => 8,
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -993,15 +987,10 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'description' => 'Use a cropped version of the full header image for this image.',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'image',
-        'settings' => array(
-          'conditions' => array(),
-          'image_link' => '',
-          'image_style' => '',
-        ),
-        'type' => 'image',
-        'weight' => 2,
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 38,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1077,7 +1066,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 23,
+        'weight' => 17,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1117,12 +1106,9 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'text_default',
-        'weight' => 14,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 40,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1233,12 +1219,9 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'link',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'link_default',
-        'weight' => 6,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 42,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1302,12 +1285,9 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'link',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'link_default',
-        'weight' => 7,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 43,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1371,12 +1351,9 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'link',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'link_default',
-        'weight' => 5,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 41,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1445,7 +1422,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'link_default',
-        'weight' => 33,
+        'weight' => 29,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1623,12 +1600,9 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'pathauto_title_alias',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'pathauto_title_alias_default',
-        'weight' => 18,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 45,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1672,7 +1646,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 39,
+        'weight' => 21,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1723,7 +1697,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 29,
+        'weight' => 19,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1772,7 +1746,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 1,
+        'weight' => 26,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1825,7 +1799,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 38,
+        'weight' => 20,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1878,7 +1852,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 12,
+        'weight' => 13,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1995,7 +1969,7 @@ Format: [FIRST NAME] on [SITE]',
           'conditions' => array(),
         ),
         'type' => 'link_default',
-        'weight' => 19,
+        'weight' => 15,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2057,15 +2031,15 @@ Format: [FIRST NAME] on [SITE]',
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
           'conditions' => array(),
           'image_link' => '',
-          'image_style' => '',
+          'image_style' => '170x170',
         ),
         'type' => 'image',
-        'weight' => 17,
+        'weight' => 9,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2143,7 +2117,7 @@ Format: [FIRST NAME] on [SITE]',
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 37,
+        'weight' => 12,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2192,7 +2166,7 @@ Format: [FIRST NAME] on [SITE]',
           'conditions' => array(),
         ),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 21,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2232,13 +2206,13 @@ Format: [FIRST NAME] on [SITE]',
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 20,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2356,7 +2330,7 @@ Format: [FIRST NAME] on [SITE]',
           'conditions' => array(),
         ),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 24,
+        'weight' => 22,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2406,7 +2380,7 @@ Format: [FIRST NAME] on [SITE]',
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_view',
-        'weight' => 28,
+        'weight' => 18,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2453,7 +2427,7 @@ Format: [FIRST NAME] on [SITE]',
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 31,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2507,7 +2481,7 @@ Format: [FIRST NAME] on [SITE]',
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_view',
-        'weight' => 32,
+        'weight' => 28,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2554,7 +2528,7 @@ Format: [FIRST NAME] on [SITE]',
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 30,
+        'weight' => 14,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2597,13 +2571,13 @@ Format: [FIRST NAME] on [SITE]',
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'list',
         'settings' => array(
           'conditions' => array(),
         ),
         'type' => 'list_default',
-        'weight' => 9,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2649,7 +2623,7 @@ Format: [FIRST NAME] on [SITE]',
           'conditions' => array(),
         ),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 25,
+        'weight' => 27,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2691,13 +2665,13 @@ Format: [FIRST NAME] on [SITE]',
     'description' => 'Format: Position, Organization (example: Assistant Vice President of Regional Operations, Amazon)',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 35,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2812,7 +2786,7 @@ Format: [FIRST NAME] on [SITE]',
           'conditions' => array(),
         ),
         'type' => 'computed_field_plain',
-        'weight' => 40,
+        'weight' => 32,
       ),
       'teaser' => array(
         'label' => 'above',

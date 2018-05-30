@@ -382,6 +382,37 @@ function gsb_feature_voices_ct_field_group_info() {
   );
   $field_groups['group_taxonomy|node|voices|form'] = $field_group;
 
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_voices_group|node|voices|default';
+  $field_group->group_name = 'group_voices_group';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'voices';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => '',
+    'weight' => '1',
+    'children' => array(
+      0 => 'field_degree_year',
+      1 => 'field_full_name',
+      2 => 'field_slideshow_style',
+      3 => 'field_title_position_single',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'label' => '',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'group-voices-group field-group-fieldset',
+        'description' => '',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_voices_group|node|voices|default'] = $field_group;
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Administration');
