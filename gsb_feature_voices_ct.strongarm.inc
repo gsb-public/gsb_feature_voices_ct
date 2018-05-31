@@ -239,6 +239,10 @@ function gsb_feature_voices_ct_strongarm() {
             'weight' => '23',
             'visible' => TRUE,
           ),
+          'teaser' => array(
+            'weight' => '4',
+            'visible' => FALSE,
+          ),
         ),
       ),
     ),

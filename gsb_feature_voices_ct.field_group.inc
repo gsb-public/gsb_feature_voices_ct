@@ -385,6 +385,39 @@ function gsb_feature_voices_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_voice_wrapper|node|voices|teaser';
+  $field_group->group_name = 'group_voice_wrapper';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'voices';
+  $field_group->mode = 'teaser';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Wrapper',
+    'weight' => '3',
+    'children' => array(
+      0 => 'field_degree_year',
+      1 => 'field_person_fac_single_ref',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Wrapper',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'group-voice-wrapper field-group-div',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'none',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_voice_wrapper|node|voices|teaser'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_voices_group|node|voices|default';
   $field_group->group_name = 'group_voices_group';
   $field_group->entity_type = 'node';
@@ -427,6 +460,7 @@ function gsb_feature_voices_ct_field_group_info() {
   t('Tagging');
   t('Tags');
   t('Top Tabs');
+  t('Wrapper');
 
   return $field_groups;
 }
