@@ -396,7 +396,8 @@ function gsb_feature_voices_ct_field_group_info() {
     'weight' => '3',
     'children' => array(
       0 => 'field_degree_year',
-      1 => 'field_person_fac_single_ref',
+      1 => 'field_full_name',
+      2 => 'field_person_fac_single_ref',
     ),
     'format_type' => 'div',
     'format_settings' => array(
