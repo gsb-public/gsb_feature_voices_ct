@@ -236,7 +236,7 @@ function gsb_feature_voices_ct_strongarm() {
       'display' => array(
         'gsb_feature_base_fields_faculty_authors' => array(
           'default' => array(
-            'weight' => '24',
+            'weight' => '23',
             'visible' => TRUE,
           ),
           'teaser' => array(
