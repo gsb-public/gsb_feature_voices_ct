@@ -2797,6 +2797,50 @@ Format: [FIRST NAME] on [SITE]',
     'workbench_access_field' => 0,
   );
 
+  // Exported field_instance: 'node-voices-field_voices_cta'.
+  $field_instances['node-voices-field_voices_cta'] = array(
+    'bundle' => 'voices',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'computed_field',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'computed_field_computed_value',
+        'weight' => 49,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_voices_cta',
+    'label' => 'Voices CTA',
+    'required' => 0,
+    'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'computed_field',
+      'settings' => array(),
+      'type' => 'computed',
+      'weight' => 84,
+    ),
+    'workbench_access_field' => 0,
+  );
+
   // Exported field_instance: 'node-voices-field_voices_path'.
   $field_instances['node-voices-field_voices_path'] = array(
     'bundle' => 'voices',
@@ -2806,12 +2850,9 @@ Format: [FIRST NAME] on [SITE]',
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'computed_field',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'computed_field_plain',
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 31,
       ),
       'teaser' => array(
@@ -2891,6 +2932,7 @@ Format: [FIRST NAME] on [SITE]');
   t('Story');
   t('URL Alias');
   t('Use a cropped version of the full header image for this image.');
+  t('Voices CTA');
   t('Voices Path');
 
   return $field_instances;
