@@ -458,7 +458,7 @@ function gsb_feature_voices_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Related',
-    'weight' => '24',
+    'weight' => '25',
     'children' => array(
       0 => 'field_link_unlimited',
       1 => 'field_person_fac_single_ref',
@@ -466,6 +466,7 @@ function gsb_feature_voices_ct_field_group_info() {
       3 => 'field_related_idea_story',
       4 => 'field_related_other_unlimited',
       5 => 'gsb_feature_base_fields_faculty_authors',
+      6 => 'related_title',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
