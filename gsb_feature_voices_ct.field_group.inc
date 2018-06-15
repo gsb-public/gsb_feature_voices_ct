@@ -447,6 +447,39 @@ function gsb_feature_voices_ct_field_group_info() {
   );
   $field_groups['group_voices_group|node|voices|default'] = $field_group;
 
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_wrapper_related|node|voices|default';
+  $field_group->group_name = 'group_wrapper_related';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'voices';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Related',
+    'weight' => '53',
+    'children' => array(
+      0 => 'field_link_unlimited',
+      1 => 'field_person_fac_single_ref',
+      2 => 'field_person_ref_unlimited',
+      3 => 'field_related_idea_story',
+      4 => 'field_related_other_unlimited',
+      5 => 'gsb_feature_base_fields_faculty_authors',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'label' => 'Related',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'group-wrapper-related field-group-fieldset',
+        'description' => '',
+      ),
+      'formatter' => 'collapsed',
+    ),
+  );
+  $field_groups['group_wrapper_related|node|voices|default'] = $field_group;
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Administration');
@@ -457,6 +490,7 @@ function gsb_feature_voices_ct_field_group_info() {
   t('Header and Body');
   t('Industry');
   t('Region');
+  t('Related');
   t('Related Content');
   t('Tagging');
   t('Tags');

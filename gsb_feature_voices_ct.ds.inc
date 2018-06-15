@@ -17,6 +17,27 @@ function gsb_feature_voices_ct_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'voices';
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
+    'voices_ct_background_rail' => array(
+      'weight' => '21',
+      'label' => 'hidden',
+      'format' => 'default',
+      'formatter_settings' => array(
+        'show_title' => 0,
+        'title_wrapper' => '',
+        'ctools' => 'a:3:{s:4:"conf";a:10:{s:5:"label";s:5:"title";s:9:"formatter";s:26:"computed_field_unsanitized";s:11:"delta_limit";i:0;s:12:"delta_offset";s:1:"0";s:14:"delta_reversed";b:0;s:18:"formatter_settings";a:0:{}s:7:"context";s:25:"argument_entity_id:node_1";s:14:"override_title";i:0;s:19:"override_title_text";s:0:"";s:22:"override_title_heading";s:2:"h2";}s:4:"type";s:12:"entity_field";s:7:"subtype";s:21:"node:field_voices_cta";}',
+        'load_terms' => 0,
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+        'conditions' => array(),
+      ),
+    ),
     'voices_mobile_profile_image' => array(
       'weight' => '2',
       'label' => 'hidden',
@@ -66,16 +87,12 @@ function gsb_feature_voices_ct_ds_field_settings_info() {
           'lb-el' => 'div',
           'lb-cl' => 'field-label',
           'lb-col' => TRUE,
-        ),
-      ),
-    ),
-    'field_alumni_story' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'lb-el' => 'div',
-          'lb-cl' => 'field-label',
-          'lb-col' => TRUE,
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
         ),
       ),
     ),
@@ -107,16 +124,6 @@ function gsb_feature_voices_ct_ds_field_settings_info() {
       ),
     ),
     'field_field_of_study' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'lb-el' => 'div',
-          'lb-cl' => 'field-label',
-          'lb-col' => TRUE,
-        ),
-      ),
-    ),
-    'field_file_unlimited_public' => array(
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
@@ -178,6 +185,12 @@ function gsb_feature_voices_ct_ds_field_settings_info() {
           'lb-el' => 'div',
           'lb-cl' => 'field-label',
           'lb-col' => TRUE,
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
         ),
       ),
     ),
@@ -198,6 +211,12 @@ function gsb_feature_voices_ct_ds_field_settings_info() {
           'lb-el' => 'div',
           'lb-cl' => 'field-label',
           'lb-col' => TRUE,
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
         ),
       ),
     ),
@@ -208,26 +227,12 @@ function gsb_feature_voices_ct_ds_field_settings_info() {
           'lb-el' => 'div',
           'lb-cl' => 'field-label',
           'lb-col' => TRUE,
-        ),
-      ),
-    ),
-    'field_person_type' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'lb-el' => 'div',
-          'lb-cl' => 'field-label',
-          'lb-col' => TRUE,
-        ),
-      ),
-    ),
-    'field_person_type_execed' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'lb-el' => 'div',
-          'lb-cl' => 'field-label',
-          'lb-col' => TRUE,
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
         ),
       ),
     ),
@@ -299,16 +304,6 @@ function gsb_feature_voices_ct_ds_field_settings_info() {
         ),
       ),
     ),
-    'field_region_of_interest' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'lb-el' => 'div',
-          'lb-cl' => 'field-label',
-          'lb-col' => TRUE,
-        ),
-      ),
-    ),
     'field_related_idea_story' => array(
       'formatter_settings' => array(
         'ft' => array(
@@ -316,6 +311,12 @@ function gsb_feature_voices_ct_ds_field_settings_info() {
           'lb-el' => 'div',
           'lb-cl' => 'field-label',
           'lb-col' => TRUE,
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
         ),
       ),
     ),
@@ -326,6 +327,12 @@ function gsb_feature_voices_ct_ds_field_settings_info() {
           'lb-el' => 'div',
           'lb-cl' => 'field-label',
           'lb-col' => TRUE,
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
         ),
       ),
     ),
@@ -400,6 +407,32 @@ function gsb_feature_voices_ct_ds_custom_fields_info() {
 
   $ds_field = new stdClass();
   $ds_field->api_version = 1;
+  $ds_field->field = 'voices_ct_background_rail';
+  $ds_field->label = 'Voices CT background rail';
+  $ds_field->field_type = 7;
+  $ds_field->entities = array(
+    'node' => 'node',
+  );
+  $ds_field->ui_limit = '';
+  $ds_field->properties = array(
+    'default' => array(),
+    'settings' => array(
+      'show_title' => array(
+        'type' => 'checkbox',
+      ),
+      'title_wrapper' => array(
+        'type' => 'textfield',
+        'description' => 'Eg: h1, h2, p',
+      ),
+      'ctools' => array(
+        'type' => 'ctools',
+      ),
+    ),
+  );
+  $export['voices_ct_background_rail'] = $ds_field;
+
+  $ds_field = new stdClass();
+  $ds_field->api_version = 1;
   $ds_field->field = 'voices_mobile_profile_image';
   $ds_field->label = 'Voices Mobile Profile Image';
   $ds_field->field_type = 7;
@@ -445,8 +478,8 @@ function gsb_feature_voices_ct_ds_layout_settings_info() {
       'header' => array(
         0 => 'group_voices_group',
         1 => 'field_image_key_image',
-        2 => 'voices_mobile_profile_image',
-        3 => 'field_slideshow_style',
+        2 => 'field_slideshow_style',
+        3 => 'voices_mobile_profile_image',
         4 => 'field_full_name',
         5 => 'field_quote',
         7 => 'field_degree_year',
@@ -460,38 +493,35 @@ function gsb_feature_voices_ct_ds_layout_settings_info() {
         12 => 'field_tag',
         13 => 'social_buttons_bottom',
         14 => 'field_link_single',
-        37 => 'field_voices_cta',
+        15 => 'field_voices_cta',
       ),
       'right' => array(
-        15 => 'field_profile_photo',
-        16 => 'field_location',
-        17 => 'field_program_unlimited',
-        18 => 'field_academic_degrees_unlimited',
-        19 => 'field_alumni_story',
-        20 => 'field_program_attended',
-        21 => 'field_related_programs',
-        22 => 'field_professional_experience',
+        16 => 'field_profile_photo',
+        17 => 'field_location',
+        18 => 'field_field_of_study',
+        19 => 'field_program_unlimited',
+        20 => 'field_academic_degrees_unlimited',
+        21 => 'field_professional_experience',
+        22 => 'field_program_attended',
         23 => 'field_profile_links',
-        24 => 'field_industry',
-        25 => 'field_field_of_study',
-        26 => 'field_region_of_interest',
-        27 => 'gsb_feature_base_fields_faculty_authors',
-        28 => 'field_related_other_unlimited',
-        29 => 'field_alumni_directory_link',
-        30 => 'field_link_unlimited',
+        24 => 'field_alumni_directory_link',
+        25 => 'voices_ct_background_rail',
+        26 => 'field_related_programs',
+        27 => 'field_industry',
+        28 => 'gsb_feature_base_fields_faculty_authors',
+        29 => 'field_related_other_unlimited',
+        30 => 'group_wrapper_related',
         31 => 'field_person_ref_unlimited',
-        32 => 'field_person_type',
-        33 => 'field_person_type_execed',
-        34 => 'field_file_unlimited_public',
-        35 => 'field_person_fac_single_ref',
-        36 => 'field_related_idea_story',
+        32 => 'field_link_unlimited',
+        33 => 'field_person_fac_single_ref',
+        34 => 'field_related_idea_story',
       ),
     ),
     'fields' => array(
       'group_voices_group' => 'header',
       'field_image_key_image' => 'header',
-      'voices_mobile_profile_image' => 'header',
       'field_slideshow_style' => 'header',
+      'voices_mobile_profile_image' => 'header',
       'field_full_name' => 'header',
       'field_quote' => 'header',
       'social_buttons_top' => 'left',
@@ -503,29 +533,26 @@ function gsb_feature_voices_ct_ds_layout_settings_info() {
       'field_tag' => 'left',
       'social_buttons_bottom' => 'left',
       'field_link_single' => 'left',
+      'field_voices_cta' => 'left',
       'field_profile_photo' => 'right',
       'field_location' => 'right',
+      'field_field_of_study' => 'right',
       'field_program_unlimited' => 'right',
       'field_academic_degrees_unlimited' => 'right',
-      'field_alumni_story' => 'right',
-      'field_program_attended' => 'right',
-      'field_related_programs' => 'right',
       'field_professional_experience' => 'right',
+      'field_program_attended' => 'right',
       'field_profile_links' => 'right',
+      'field_alumni_directory_link' => 'right',
+      'voices_ct_background_rail' => 'right',
+      'field_related_programs' => 'right',
       'field_industry' => 'right',
-      'field_field_of_study' => 'right',
-      'field_region_of_interest' => 'right',
       'gsb_feature_base_fields_faculty_authors' => 'right',
       'field_related_other_unlimited' => 'right',
-      'field_alumni_directory_link' => 'right',
-      'field_link_unlimited' => 'right',
+      'group_wrapper_related' => 'right',
       'field_person_ref_unlimited' => 'right',
-      'field_person_type' => 'right',
-      'field_person_type_execed' => 'right',
-      'field_file_unlimited_public' => 'right',
+      'field_link_unlimited' => 'right',
       'field_person_fac_single_ref' => 'right',
       'field_related_idea_story' => 'right',
-      'field_voices_cta' => 'left',
     ),
     'classes' => array(),
     'wrappers' => array(

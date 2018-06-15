@@ -26,7 +26,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 14,
+        'weight' => 16,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -140,13 +140,13 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'list',
         'settings' => array(
           'conditions' => array(),
         ),
         'type' => 'list_default',
-        'weight' => 25,
+        'weight' => 20,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -192,12 +192,9 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'list_default',
-        'weight' => 15,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 41,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -409,7 +406,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 47,
+        'weight' => 49,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -640,7 +637,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 21,
+        'weight' => 14,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -687,12 +684,9 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'file',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'file_default',
-        'weight' => 30,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 29,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -760,7 +754,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 43,
+        'weight' => 45,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -996,7 +990,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 42,
+        'weight' => 44,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -1077,7 +1071,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 20,
+        'weight' => 23,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1119,7 +1113,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 44,
+        'weight' => 46,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1232,7 +1226,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 45,
+        'weight' => 47,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1298,7 +1292,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 46,
+        'weight' => 48,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1430,13 +1424,13 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'link',
         'settings' => array(
           'conditions' => array(),
         ),
         'type' => 'link_default',
-        'weight' => 26,
+        'weight' => 55,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1505,7 +1499,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 12,
+        'weight' => 13,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1616,7 +1610,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 48,
+        'weight' => 50,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1652,7 +1646,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
           'bypass_access' => 0,
@@ -1660,7 +1654,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
           'link' => 0,
         ),
         'type' => 'entityreference_label',
-        'weight' => 32,
+        'weight' => 56,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -1708,7 +1702,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
           'bypass_access' => 0,
@@ -1716,7 +1710,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
           'link' => 0,
         ),
         'type' => 'entityreference_label',
-        'weight' => 27,
+        'weight' => 54,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1760,11 +1754,8 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'taxonomy_term_reference_link',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 28,
       ),
       'teaser' => array(
@@ -1813,12 +1804,9 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 29,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 30,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1871,7 +1859,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 18,
+        'weight' => 17,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2058,7 +2046,7 @@ Format: [FIRST NAME] on [SITE]',
           'image_style' => '170x170',
         ),
         'type' => 'image',
-        'weight' => 11,
+        'weight' => 12,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2136,7 +2124,7 @@ Format: [FIRST NAME] on [SITE]',
           'link' => 0,
         ),
         'type' => 'entityreference_label',
-        'weight' => 16,
+        'weight' => 18,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2185,7 +2173,7 @@ Format: [FIRST NAME] on [SITE]',
           'conditions' => array(),
         ),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 13,
+        'weight' => 15,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2356,12 +2344,9 @@ Format: [FIRST NAME] on [SITE]',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 22,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 40,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2403,7 +2388,7 @@ Format: [FIRST NAME] on [SITE]',
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 41,
+        'weight' => 43,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2442,7 +2427,7 @@ Format: [FIRST NAME] on [SITE]',
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
           'bypass_access' => 0,
@@ -2450,7 +2435,7 @@ Format: [FIRST NAME] on [SITE]',
           'link' => 0,
         ),
         'type' => 'entityreference_label',
-        'weight' => 33,
+        'weight' => 57,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2483,6 +2468,119 @@ Format: [FIRST NAME] on [SITE]',
     'workbench_access_field' => 0,
   );
 
+  // Exported field_instance: 'node-voices-field_related_other_label'.
+  $field_instances['node-voices-field_related_other_label'] = array(
+    'bundle' => 'voices',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 51,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_related_other_label',
+    'label' => 'Related Title Rail',
+    'required' => 0,
+    'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          'act' => 'act',
+          'full_html' => 'full_html',
+          'gsb_html_text' => 'gsb_html_text',
+          'gsb_wysiwyg_text' => 'gsb_wysiwyg_text',
+          'image_resource_caption' => 'image_resource_caption',
+          'image_text_equivalent' => 'image_text_equivalent',
+          'markdown' => 'markdown',
+          'markdown_lite_minus_resources' => 'markdown_lite_minus_resources',
+          'markdown_plus_iframe' => 'markdown_plus_iframe',
+          'paragraphed_plain_text' => 'paragraphed_plain_text',
+          'plain_text' => 'plain_text',
+          'sidebar' => 'sidebar',
+          'slideshow' => 'slideshow',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            'act' => array(
+              'weight' => 0,
+            ),
+            'full_html' => array(
+              'weight' => 1,
+            ),
+            'gsb_html_text' => array(
+              'weight' => -9,
+            ),
+            'gsb_wysiwyg_text' => array(
+              'weight' => -10,
+            ),
+            'image_resource_caption' => array(
+              'weight' => 0,
+            ),
+            'image_text_equivalent' => array(
+              'weight' => 0,
+            ),
+            'markdown' => array(
+              'weight' => 0,
+            ),
+            'markdown_lite_minus_resources' => array(
+              'weight' => 0,
+            ),
+            'markdown_plus_iframe' => array(
+              'weight' => 0,
+            ),
+            'paragraphed_plain_text' => array(
+              'weight' => 0,
+            ),
+            'plain_text' => array(
+              'weight' => 10,
+            ),
+            'sidebar' => array(
+              'weight' => 0,
+            ),
+            'slideshow' => array(
+              'weight' => 0,
+            ),
+          ),
+        ),
+      ),
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'maxlength_js' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 86,
+    ),
+    'workbench_access_field' => 0,
+  );
+
   // Exported field_instance: 'node-voices-field_related_other_unlimited'.
   $field_instances['node-voices-field_related_other_unlimited'] = array(
     'bundle' => 'voices',
@@ -2493,7 +2591,7 @@ Format: [FIRST NAME] on [SITE]',
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'field_collection',
         'settings' => array(
           'add' => 'Add',
@@ -2504,7 +2602,7 @@ Format: [FIRST NAME] on [SITE]',
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_view',
-        'weight' => 24,
+        'weight' => 53,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2551,7 +2649,7 @@ Format: [FIRST NAME] on [SITE]',
           'link' => 0,
         ),
         'type' => 'entityreference_label',
-        'weight' => 17,
+        'weight' => 22,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2812,7 +2910,7 @@ Format: [FIRST NAME] on [SITE]',
           'conditions' => array(),
         ),
         'type' => 'computed_field_computed_value',
-        'weight' => 49,
+        'weight' => 11,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2853,7 +2951,7 @@ Format: [FIRST NAME] on [SITE]',
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 31,
+        'weight' => 42,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2928,6 +3026,7 @@ Format: [FIRST NAME] on [SITE]');
   t('Publication or Event');
   t('Quote');
   t('Region');
+  t('Related Title Rail');
   t('Short URL');
   t('Story');
   t('URL Alias');
