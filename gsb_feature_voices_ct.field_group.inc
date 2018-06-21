@@ -455,10 +455,10 @@ function gsb_feature_voices_ct_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'voices';
   $field_group->mode = 'default';
-  $field_group->parent_name = '';
+  $field_group->parent_name = 'group_wrapper_tablet_4';
   $field_group->data = array(
     'label' => 'Related',
-    'weight' => '25',
+    'weight' => '24',
     'children' => array(
       0 => 'field_link_unlimited',
       1 => 'field_person_fac_single_ref',
@@ -481,6 +481,146 @@ function gsb_feature_voices_ct_field_group_info() {
   );
   $field_groups['group_wrapper_related|node|voices|default'] = $field_group;
 
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_wrapper_tablet_1|node|voices|default';
+  $field_group->group_name = 'group_wrapper_tablet_1';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'voices';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Tablet 1',
+    'weight' => '12',
+    'children' => array(
+      0 => 'field_profile_photo',
+      1 => 'voices_mobile_degree_year',
+      2 => 'voices_mobile_full_name',
+      3 => 'voices_mobile_job_title_org',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Tablet 1',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'group-wrapper-tablet-1 field-group-fieldset',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_wrapper_tablet_1|node|voices|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_wrapper_tablet_2|node|voices|default';
+  $field_group->group_name = 'group_wrapper_tablet_2';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'voices';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Tablet 2',
+    'weight' => '20',
+    'children' => array(
+      0 => 'field_academic_degrees_unlimited',
+      1 => 'field_field_of_study',
+      2 => 'field_location',
+      3 => 'field_professional_experience',
+      4 => 'field_program_unlimited',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Tablet 2',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'group-wrapper-tablet-2 field-group-fieldset',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_wrapper_tablet_2|node|voices|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_wrapper_tablet_3|node|voices|default';
+  $field_group->group_name = 'group_wrapper_tablet_3';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'voices';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Tablet 3',
+    'weight' => '21',
+    'children' => array(
+      0 => 'field_alumni_directory_link',
+      1 => 'field_industry',
+      2 => 'field_profile_links',
+      3 => 'field_program_attended',
+      4 => 'field_related_programs',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Tablet 3',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'group-wrapper-tablet-3 field-group-fieldset',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_wrapper_tablet_3|node|voices|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_wrapper_tablet_4|node|voices|default';
+  $field_group->group_name = 'group_wrapper_tablet_4';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'voices';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Tablet 4',
+    'weight' => '46',
+    'children' => array(
+      0 => 'voices_ct_background_rail',
+      1 => 'group_wrapper_related',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Tablet 4',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'group-wrapper-tablet-4 field-group-div',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_wrapper_tablet_4|node|voices|default'] = $field_group;
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Administration');
@@ -493,6 +633,10 @@ function gsb_feature_voices_ct_field_group_info() {
   t('Region');
   t('Related');
   t('Related Content');
+  t('Tablet 1');
+  t('Tablet 2');
+  t('Tablet 3');
+  t('Tablet 4');
   t('Tagging');
   t('Tags');
   t('Top Tabs');
