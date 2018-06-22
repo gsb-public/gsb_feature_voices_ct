@@ -240,7 +240,7 @@ function gsb_feature_voices_ct_strongarm() {
             'visible' => TRUE,
           ),
           'teaser' => array(
-            'weight' => '11',
+            'weight' => '17',
             'visible' => FALSE,
           ),
         ),

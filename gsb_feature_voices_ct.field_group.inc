@@ -393,12 +393,8 @@ function gsb_feature_voices_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Wrapper',
-    'weight' => '3',
-    'children' => array(
-      0 => 'field_degree_year',
-      1 => 'field_full_name',
-      2 => 'field_person_fac_single_ref',
-    ),
+    'weight' => '16',
+    'children' => array(),
     'format_type' => 'div',
     'format_settings' => array(
       'label' => 'Wrapper',
