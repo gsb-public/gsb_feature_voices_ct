@@ -194,7 +194,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 33,
+        'weight' => 28,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -406,7 +406,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 41,
+        'weight' => 36,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -518,7 +518,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 4,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -686,7 +686,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 30,
+        'weight' => 25,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -754,7 +754,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 37,
+        'weight' => 32,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -854,53 +854,6 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-voices-field_full_name'.
-  $field_instances['node-voices-field_full_name'] = array(
-    'bundle' => 'voices',
-    'custom_add_another' => '',
-    'custom_remove' => '',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'computed_field',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'computed_field_plain',
-        'weight' => 3,
-      ),
-      'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'computed_field',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'computed_field_plain',
-        'weight' => 4,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_full_name',
-    'label' => 'Full name',
-    'required' => 0,
-    'settings' => array(
-      'custom_add_another' => '',
-      'custom_remove' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'computed_field',
-      'settings' => array(),
-      'type' => 'computed',
-      'weight' => 7,
-    ),
-    'workbench_access_field' => 0,
-  );
-
   // Exported field_instance: 'node-voices-field_image_key_image'.
   $field_instances['node-voices-field_image_key_image'] = array(
     'bundle' => 'voices',
@@ -990,7 +943,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 36,
+        'weight' => 31,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -1113,7 +1066,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 38,
+        'weight' => 33,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1226,7 +1179,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 39,
+        'weight' => 34,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1292,7 +1245,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 40,
+        'weight' => 35,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1430,7 +1383,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'link_default',
-        'weight' => 25,
+        'weight' => 26,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1610,7 +1563,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 42,
+        'weight' => 37,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1654,7 +1607,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
           'link' => 0,
         ),
         'type' => 'entityreference_label',
-        'weight' => 26,
+        'weight' => 27,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -1710,7 +1663,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
           'link' => 0,
         ),
         'type' => 'entityreference_label',
-        'weight' => 24,
+        'weight' => 25,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1756,7 +1709,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 29,
+        'weight' => 24,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1806,7 +1759,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 31,
+        'weight' => 26,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2046,7 +1999,7 @@ Format: [FIRST NAME] on [SITE]',
           'image_style' => '170x170',
         ),
         'type' => 'image',
-        'weight' => 2,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2346,7 +2299,7 @@ Format: [FIRST NAME] on [SITE]',
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 32,
+        'weight' => 27,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2388,7 +2341,7 @@ Format: [FIRST NAME] on [SITE]',
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 35,
+        'weight' => 30,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2435,7 +2388,7 @@ Format: [FIRST NAME] on [SITE]',
           'link' => 0,
         ),
         'type' => 'entityreference_label',
-        'weight' => 27,
+        'weight' => 28,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2585,7 +2538,7 @@ Format: [FIRST NAME] on [SITE]',
           'conditions' => array(),
         ),
         'type' => 'list_key',
-        'weight' => 2,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -2679,7 +2632,7 @@ Format: [FIRST NAME] on [SITE]',
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 5,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2818,7 +2771,51 @@ Format: [FIRST NAME] on [SITE]',
       'module' => 'computed_field',
       'settings' => array(),
       'type' => 'computed',
-      'weight' => 84,
+      'weight' => 9,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-voices-field_voices_full_name'.
+  $field_instances['node-voices-field_voices_full_name'] = array(
+    'bundle' => 'voices',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'computed_field',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'computed_field_plain',
+        'weight' => 5,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_voices_full_name',
+    'label' => 'Full Name',
+    'required' => 0,
+    'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'computed_field',
+      'settings' => array(),
+      'type' => 'computed',
+      'weight' => 7,
     ),
     'workbench_access_field' => 0,
   );
@@ -2835,7 +2832,7 @@ Format: [FIRST NAME] on [SITE]',
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 34,
+        'weight' => 29,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2859,7 +2856,7 @@ Format: [FIRST NAME] on [SITE]',
       'module' => 'computed_field',
       'settings' => array(),
       'type' => 'computed',
-      'weight' => 83,
+      'weight' => 8,
     ),
     'workbench_access_field' => 0,
   );
@@ -2885,7 +2882,7 @@ Format: [FIRST NAME] on [SITE]');
   t('Format: Degree or Program, ’YY
 (example: MBA ’18 | Seed Transformation Program ’19)');
   t('Format: Position, Organization (example: Assistant Vice President of Regional Operations, Amazon)');
-  t('Full name');
+  t('Full Name');
   t('Header Image');
   t('Hometown or Location');
   t('Industry');

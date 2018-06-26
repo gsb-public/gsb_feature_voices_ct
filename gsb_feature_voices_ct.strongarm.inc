@@ -21,7 +21,7 @@ function gsb_feature_voices_ct_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'auto_entitylabel_pattern_node_voices';
-  $strongarm->value = '[node:field_full_name]';
+  $strongarm->value = '[node:field_voices_full_name]';
   $export['auto_entitylabel_pattern_node_voices'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -215,22 +215,22 @@ function gsb_feature_voices_ct_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '3',
-        ),
-        'title' => array(
-          'weight' => '6',
-        ),
-        'path' => array(
           'weight' => '2',
         ),
-        'redirect' => array(
+        'title' => array(
           'weight' => '5',
+        ),
+        'path' => array(
+          'weight' => '1',
+        ),
+        'redirect' => array(
+          'weight' => '4',
         ),
         'workbench_access' => array(
           'weight' => '11',
         ),
         'xmlsitemap' => array(
-          'weight' => '4',
+          'weight' => '3',
         ),
       ),
       'display' => array(

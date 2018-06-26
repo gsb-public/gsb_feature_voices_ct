@@ -46,6 +46,48 @@ $entity_field[0]["value"] = \'<a href="/\'.$voices_path[0]["value"].\'" class="c
     'type' => 'computed',
   );
 
+  // Exported field_base: 'field_voices_full_name'.
+  $field_bases['field_voices_full_name'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_voices_full_name',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'computed_field',
+    'settings' => array(
+      'code' => '$person_type_id = field_get_items($entity_type, $entity, \'field_person_type\');
+$person_type = taxonomy_term_load($person_type_id[0][\'tid\']);
+
+if ($person_type->name == \'Faculty\') {
+  $faculty_lookup_id =field_get_items($entity_type, $entity ,\'field_person_fac_single_ref\');
+  $faculty = node_load($faculty_lookup_id[0][\'target_id\']);
+  $entity_field[0][\'value\'] = $faculty->title;
+} else {
+  $field_a = field_get_items($entity_type, $entity, \'field_first_name\');
+  $field_b = field_get_items($entity_type, $entity, \'field_last_name\');
+  $entity_field[0][\'value\'] = $field_a[0][\'value\'] . " " . $field_b[0][\'value\'];
+}
+',
+      'database' => array(
+        'data_default' => '',
+        'data_index' => 0,
+        'data_length' => 256,
+        'data_not_NULL' => 0,
+        'data_precision' => 10,
+        'data_scale' => 2,
+        'data_size' => 'normal',
+        'data_type' => 'text',
+      ),
+      'display_format' => '$display_output = $entity_field_item[\'value\'];',
+      'recalculate' => 0,
+      'store' => 1,
+    ),
+    'translatable' => 0,
+    'type' => 'computed',
+  );
+
   // Exported field_base: 'field_voices_path'.
   $field_bases['field_voices_path'] = array(
     'active' => 1,
