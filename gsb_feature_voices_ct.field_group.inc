@@ -393,7 +393,7 @@ function gsb_feature_voices_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Wrapper',
-    'weight' => '16',
+    'weight' => '18',
     'children' => array(),
     'format_type' => 'div',
     'format_settings' => array(
