@@ -21,14 +21,27 @@ function gsb_feature_voices_ct_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'auto_entitylabel_pattern_node_voices';
-  $strongarm->value = '[node:field_voices_full_name]';
+  $strongarm->value = '<?php
+$person_type_id =  $entity->field_person_type[\'und\'][0][\'tid\'];
+$person_type = taxonomy_term_load($person_type_id);
+if ($person_type->name == \'Faculty\') {
+  $faculty_lookup_id =$entity->field_person_fac_single_ref;
+  $faculty = node_load($faculty_lookup_id[\'und\'][0][\'target_id\']);
+  $entity_field[0][\'value\'] = $faculty->title;
+} else {
+  $field_a = $entity->field_first_name;
+  $field_b = $entity->field_last_name;
+  $entity_field[0][\'value\'] = $field_a[\'und\'][0][\'value\'] . " " . $field_b[\'und\'][0][\'value\'];
+}
+echo $entity_field[0][\'value\'];
+?>';
   $export['auto_entitylabel_pattern_node_voices'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'auto_entitylabel_php_node_voices';
-  $strongarm->value = 0;
+  $strongarm->value = 1;
   $export['auto_entitylabel_php_node_voices'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -291,7 +304,7 @@ function gsb_feature_voices_ct_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_voices_pattern';
-  $strongarm->value = '[node:field_voices_path]/[node:field_pathauto_title_alias]';
+  $strongarm->value = '[node:field_voices_path]/[node:field_voices_full_name]';
   $export['pathauto_node_voices_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
