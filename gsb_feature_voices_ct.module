@@ -109,6 +109,8 @@ function gsb_feature_voices_ct_form_alter(&$form, &$form_state) {
         ];
       }
     };
+
+    drupal_add_js(drupal_get_path('module', 'gsb_feature_voices_ct') . '/js/gsb_feature_voices_ct.js');
   }
 
 };
