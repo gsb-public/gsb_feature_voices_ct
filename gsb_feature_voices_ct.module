@@ -182,3 +182,18 @@ function gsb_feature_voices_ct_panels_pane_content_alter($content, $pane, $args,
     }
   }
 }
+
+/**
+ * Implements hook_node_view().
+ */
+function gsb_feature_voices_ct_node_view($node, $view_mode, $langcode) {
+  // Only process voices.
+  if ($node->type != 'voices') {
+    return;
+  }
+
+  $person_type = array('42756', '42761', '42766', '42771');
+  if (in_array($node->field_person_type[$node->language][0]['tid'], $person_type)) {
+    $node->content['field_location']['#title'] = 'Location';
+  }
+}
