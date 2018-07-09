@@ -679,10 +679,13 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 24,
+        'label' => 'hidden',
+        'module' => 'file',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'file_default',
+        'weight' => 28,
       ),
       'teaser' => array(
         'label' => 'above',

@@ -550,6 +550,7 @@ function gsb_feature_voices_ct_ds_layout_settings_info() {
         35 => 'field_link_unlimited',
         36 => 'field_person_fac_single_ref',
         37 => 'field_related_idea_story',
+        38 => 'field_file_unlimited_public',
       ),
     ),
     'fields' => array(
@@ -593,6 +594,7 @@ function gsb_feature_voices_ct_ds_layout_settings_info() {
       'field_link_unlimited' => 'right',
       'field_person_fac_single_ref' => 'right',
       'field_related_idea_story' => 'right',
+      'field_file_unlimited_public' => 'right',
     ),
     'classes' => array(),
     'wrappers' => array(
