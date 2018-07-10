@@ -458,12 +458,11 @@ function gsb_feature_voices_ct_field_group_info() {
     'children' => array(
       0 => 'field_file_unlimited_public',
       1 => 'field_link_unlimited',
-      2 => 'field_person_fac_single_ref',
-      3 => 'field_person_ref_unlimited',
-      4 => 'field_related_faculty',
-      5 => 'field_related_idea_story',
-      6 => 'field_related_other_unlimited',
-      7 => 'related_title',
+      2 => 'field_person_ref_unlimited',
+      3 => 'field_related_faculty',
+      4 => 'field_related_idea_story',
+      5 => 'field_related_other_unlimited',
+      6 => 'related_title',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
