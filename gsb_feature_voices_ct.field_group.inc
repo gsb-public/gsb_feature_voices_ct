@@ -196,7 +196,7 @@ function gsb_feature_voices_ct_field_group_info() {
       0 => 'field_body',
       1 => 'field_image_key_image',
       2 => 'field_quote',
-      3 => 'field_slideshow_style',
+      3 => 'field_background_color',
     ),
     'format_type' => 'htab',
     'format_settings' => array(

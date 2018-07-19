@@ -271,6 +271,52 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
+  // Exported field_instance: 'node-voices-field_background_color'.
+  $field_instances['node-voices-field_background_color'] = array(
+    'bundle' => 'voices',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'list_default',
+        'weight' => 48,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_background_color',
+    'label' => 'Background Color',
+    'required' => 1,
+    'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'use_hierarchical_select_lite' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 66,
+    ),
+    'workbench_access_field' => 0,
+  );
+
   // Exported field_instance: 'node-voices-field_body'.
   $field_instances['node-voices-field_body'] = array(
     'bundle' => 'voices',
@@ -2016,7 +2062,7 @@ Format: [FIRST NAME] on [SITE]',
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 57,
+      'weight' => 56,
     ),
     'workbench_access_field' => 0,
   );
@@ -2144,7 +2190,7 @@ Format: [FIRST NAME] on [SITE]',
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 56,
+      'weight' => 55,
     ),
     'workbench_access_field' => 0,
   );
@@ -2558,55 +2604,6 @@ Format: [FIRST NAME] on [SITE]',
       ),
       'type' => 'entityreference_autocomplete',
       'weight' => 79,
-    ),
-    'workbench_access_field' => 0,
-  );
-
-  // Exported field_instance: 'node-voices-field_slideshow_style'.
-  $field_instances['node-voices-field_slideshow_style'] = array(
-    'bundle' => 'voices',
-    'custom_add_another' => '',
-    'custom_remove' => '',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'list',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'list_key',
-        'weight' => 4,
-      ),
-      'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'list',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'list_default',
-        'weight' => 14,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_slideshow_style',
-    'label' => 'Background Color',
-    'required' => 0,
-    'settings' => array(
-      'custom_add_another' => '',
-      'custom_remove' => '',
-      'use_hierarchical_select_lite' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 66,
     ),
     'workbench_access_field' => 0,
   );
