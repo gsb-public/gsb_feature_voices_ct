@@ -426,9 +426,8 @@ function gsb_feature_voices_ct_field_group_info() {
     'weight' => '0',
     'children' => array(
       0 => 'field_degree_year',
-      1 => 'field_slideshow_style',
-      2 => 'field_title_position_single',
-      3 => 'field_voices_full_name',
+      1 => 'field_title_position_single',
+      2 => 'field_voices_full_name',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(

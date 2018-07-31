@@ -282,11 +282,8 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'list_default',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 48,
       ),
       'teaser' => array(
@@ -731,7 +728,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'file_default',
-        'weight' => 28,
+        'weight' => 27,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -909,11 +906,8 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'computed_field',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'computed_field_plain',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 3,
       ),
       'teaser' => array(
@@ -1472,7 +1466,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'link_default',
-        'weight' => 25,
+        'weight' => 26,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1689,13 +1683,8 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'entityreference',
-        'settings' => array(
-          'bypass_access' => 0,
-          'conditions' => array(),
-          'link' => 0,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 26,
       ),
       'teaser' => array(
@@ -1748,7 +1737,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
           'view_mode' => 'people_fpp',
         ),
         'type' => 'entityreference_entity_view',
-        'weight' => 24,
+        'weight' => 23,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2478,7 +2467,7 @@ Format: [FIRST NAME] on [SITE]',
           'view_mode' => 'idea_story_related',
         ),
         'type' => 'entityreference_entity_view',
-        'weight' => 27,
+        'weight' => 24,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2528,7 +2517,7 @@ Format: [FIRST NAME] on [SITE]',
           'view_mode' => 'full',
         ),
         'type' => 'gsb_field_formatter_related_items_field_collection',
-        'weight' => 23,
+        'weight' => 25,
       ),
       'teaser' => array(
         'label' => 'above',
