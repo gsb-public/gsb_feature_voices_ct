@@ -149,16 +149,6 @@ function gsb_feature_voices_ct_ds_field_settings_info() {
         ),
       ),
     ),
-    'field_industry' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'lb-el' => 'div',
-          'lb-cl' => 'field-label',
-          'lb-col' => TRUE,
-        ),
-      ),
-    ),
     'field_link_single' => array(
       'formatter_settings' => array(
         'ft' => array(
@@ -514,17 +504,16 @@ function gsb_feature_voices_ct_ds_layout_settings_info() {
         25 => 'field_program_attended',
         26 => 'field_alumni_directory_link',
         27 => 'field_related_programs',
-        28 => 'field_industry',
-        29 => 'related_title',
-        30 => 'field_profile_links',
-        31 => 'field_related_faculty',
-        32 => 'voices_ct_background_rail',
-        33 => 'field_person_ref_unlimited',
-        34 => 'group_wrapper_related',
-        35 => 'field_related_idea_story',
-        36 => 'field_related_other_unlimited',
-        37 => 'field_link_unlimited',
-        38 => 'field_file_unlimited_public',
+        28 => 'related_title',
+        29 => 'field_profile_links',
+        30 => 'field_related_faculty',
+        31 => 'voices_ct_background_rail',
+        32 => 'field_person_ref_unlimited',
+        33 => 'group_wrapper_related',
+        34 => 'field_related_idea_story',
+        35 => 'field_related_other_unlimited',
+        36 => 'field_link_unlimited',
+        37 => 'field_file_unlimited_public',
       ),
     ),
     'fields' => array(
@@ -556,7 +545,6 @@ function gsb_feature_voices_ct_ds_layout_settings_info() {
       'field_program_attended' => 'right',
       'field_alumni_directory_link' => 'right',
       'field_related_programs' => 'right',
-      'field_industry' => 'right',
       'related_title' => 'right',
       'field_profile_links' => 'right',
       'field_related_faculty' => 'right',

@@ -559,10 +559,9 @@ function gsb_feature_voices_ct_field_group_info() {
     'weight' => '13',
     'children' => array(
       0 => 'field_alumni_directory_link',
-      1 => 'field_industry',
-      2 => 'field_profile_links',
-      3 => 'field_program_attended',
-      4 => 'field_related_programs',
+      1 => 'field_profile_links',
+      2 => 'field_program_attended',
+      3 => 'field_related_programs',
     ),
     'format_type' => 'div',
     'format_settings' => array(
