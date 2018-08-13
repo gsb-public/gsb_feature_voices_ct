@@ -2198,11 +2198,8 @@ Format: [FIRST NAME] on [SITE]',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'taxonomy_term_reference_link',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 15,
       ),
       'teaser' => array(

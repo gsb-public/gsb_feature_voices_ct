@@ -526,7 +526,6 @@ function gsb_feature_voices_ct_field_group_info() {
       1 => 'field_field_of_study',
       2 => 'field_location',
       3 => 'field_professional_experience',
-      4 => 'field_program_unlimited',
     ),
     'format_type' => 'div',
     'format_settings' => array(
