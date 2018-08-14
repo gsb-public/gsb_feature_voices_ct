@@ -734,7 +734,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'file_default',
-        'weight' => 27,
+        'weight' => 28,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1469,7 +1469,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'link_default',
-        'weight' => 26,
+        'weight' => 27,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2564,7 +2564,7 @@ Format: [FIRST NAME] on [SITE]',
           'link' => 0,
         ),
         'type' => 'entityreference_label',
-        'weight' => 20,
+        'weight' => 26,
       ),
       'teaser' => array(
         'label' => 'above',

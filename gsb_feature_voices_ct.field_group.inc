@@ -462,7 +462,8 @@ function gsb_feature_voices_ct_field_group_info() {
       3 => 'field_related_faculty',
       4 => 'field_related_idea_story',
       5 => 'field_related_other_unlimited',
-      6 => 'related_title',
+      6 => 'field_related_programs',
+      7 => 'related_title',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -560,7 +561,6 @@ function gsb_feature_voices_ct_field_group_info() {
       0 => 'field_alumni_directory_link',
       1 => 'field_profile_links',
       2 => 'field_program_attended',
-      3 => 'field_related_programs',
     ),
     'format_type' => 'div',
     'format_settings' => array(
