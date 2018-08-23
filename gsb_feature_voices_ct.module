@@ -197,3 +197,137 @@ function gsb_feature_voices_ct_node_view($node, $view_mode, $langcode) {
     $node->content['field_location']['#title'] = 'Location';
   }
 }
+
+
+/**
+ * Implements hook_menu().
+ */
+function gsb_feature_voices_ct_menu() {
+  $items = array();
+  $items['admin/config/gsb'] = array(
+    'title' => 'GSB',
+    'description' => 'Site-specific configuration.',
+    'position' => 'left',
+    'page callback' => 'system_admin_menu_block_page',
+    'access arguments' => array('access administration pages'),
+    'file' => 'system.admin.inc',
+    'file path' => drupal_get_path('module', 'system'),
+  );
+  $items['admin/config/gsb/voices'] = array(
+    'title' => 'GSB Voices ',
+    'description' => 'Explore Programs and Stay in Touch CTA configuration',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('gsb_feature_voices_ct_page_form'),
+    'access arguments' => array('access administration pages'),
+  );
+  return $items;
+}
+
+/**
+ * Menu callback; displays a Dr/upal page containing the GSB FPP Xray form.
+ */
+function gsb_feature_voices_ct_page_form(array $form, array &$form_state) {
+
+  $vocabulary = taxonomy_vocabulary_machine_name_load('person_type');
+  $person_types_index = entity_load('taxonomy_term', FALSE, array('vid' => $vocabulary->vid));
+
+  $voices_cta = array(
+    'stay_in_touch' => array(
+      'text' => '',
+      'path' => ''
+    ),
+    'explore_programs' => array(
+      'text' => '',
+      'path' => ''
+    )
+  );
+
+  foreach ($person_types_index as $key => $person_type) {
+
+    $form['gsb_feature_voices_ct_cta'][$person_type->name] = array(
+      '#type' => 'fieldset',
+      '#title' => t($person_type->name),
+      '#collapsible' => FALSE,
+      '#collapsed' => FALSE,
+    );
+    $form['gsb_feature_voices_ct_cta'][$person_type->name]['stay_in_touch'] = array(
+      '#type' => 'fieldset',
+      '#title' => t('Stay in Touch CTA'),
+      '#collapsible' => FALSE,
+      '#collapsed' => FALSE,
+    );
+    $form['gsb_feature_voices_ct_cta'][$person_type->name]['explore_programs'] = array(
+      '#type' => 'fieldset',
+      '#title' => t('Explore Programs CTA'),
+      '#collapsible' => FALSE,
+      '#collapsed' => FALSE,
+    );
+
+    $form['gsb_feature_voices_ct_cta'][$person_type->name]['stay_in_touch']['gsb_feature_voices_cta_stay_in_touch_text-'.$key] = array(
+      '#type' => 'textfield',
+      '#title' => t('Text'),
+      '#default_value' =>  variable_get('gsb_feature_voices_cta_stay_in_touch_text-'.$key),
+
+    );
+    $form['gsb_feature_voices_ct_cta'][$person_type->name]['stay_in_touch']['gsb_feature_voices_cta_stay_in_touch_path-'.$key] = array(
+      '#type' => 'textfield',
+      '#title' => t('Path'),
+      '#default_value' => variable_get('gsb_feature_voices_cta_stay_in_touch_path-'.$key),
+    );
+
+    $form['gsb_feature_voices_ct_cta'][$person_type->name]['explore_programs']['gsb_feature_voices_cta_explore_programs_text-'.$key] = array(
+      '#type' => 'textfield',
+      '#title' => t('Text'),
+      '#default_value' => variable_get('gsb_feature_voices_cta_explore_programs_text-'.$key),
+    );
+    $form['gsb_feature_voices_ct_cta'][$person_type->name]['explore_programs']['gsb_feature_voices_cta_explore_programs_path-'.$key] = array(
+      '#type' => 'textfield',
+      '#title' => t('Path'),
+      '#default_value' => variable_get('gsb_feature_voices_cta_explore_programs_path-'.$key),
+    );
+  }
+ // $form['actions'] = array('#type' => 'actions');
+
+//  $form['actions']['submit'] = array(
+//    '#type' => 'submit',
+//    '#value' => st('Save'),
+//    '#submit' => array('gsb_feature_voices_ct_form_submit'),
+//  );
+
+//  $form['#validate'][] = 'gsb_feature_voices_ct_validate';
+
+
+  return gsb_feature_voices_ct_system_settings_form($form);
+}
+
+function gsb_feature_voices_ct_system_settings_form($form) {
+  $form['actions']['#type'] = 'actions';
+  $form['actions']['submit'] = array(
+    '#type' => 'submit',
+    '#value' => t('Save configuration'),
+  );
+  if (!empty($_POST) && form_get_errors()) {
+    drupal_set_message(t('The settings have not been saved because of the errors.'), 'error');
+  }
+  $form['#submit'][] = 'gsb_feature_voices_ct_system_settings_form_submit';
+
+  // By default, render the form using theme_system_settings_form().
+  if (!isset($form['#theme'])) {
+    $form['#theme'] = 'system_settings_form';
+  }
+  return $form;
+}
+
+function gsb_feature_voices_ct_system_settings_form_submit($form, &$form_state) {
+
+  // Exclude unnecessary elements.
+  dpm($form_state);
+  form_state_values_clean($form_state);
+  foreach ($form_state['values'] as $key => $value) {
+    if (is_array($value) && isset($form_state['values']['array_filter'])) {
+      $value = array_keys(array_filter($value));
+    }
+    variable_set($key, $value);
+  }
+  drupal_set_message(t('The configuration options have been saved.'));
+}
