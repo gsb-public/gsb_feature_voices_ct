@@ -2802,8 +2802,8 @@ Format: [FIRST NAME] on [SITE]',
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-voices-field_voices_explore_programs_pa'.
-  $field_instances['node-voices-field_voices_explore_programs_pa'] = array(
+  // Exported field_instance: 'node-voices-field_voices_explore_program_cta'.
+  $field_instances['node-voices-field_voices_explore_program_cta'] = array(
     'bundle' => 'voices',
     'custom_add_another' => '',
     'custom_remove' => '',
@@ -2812,9 +2812,12 @@ Format: [FIRST NAME] on [SITE]',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 17,
+        'module' => 'computed_field',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'computed_field_plain',
+        'weight' => 45,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2825,8 +2828,8 @@ Format: [FIRST NAME] on [SITE]',
     ),
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
-    'field_name' => 'field_voices_explore_programs_pa',
-    'label' => 'Voices Explore Programs Path',
+    'field_name' => 'field_voices_explore_program_cta',
+    'label' => 'Voices Explore Program CTA',
     'required' => 0,
     'settings' => array(
       'custom_add_another' => '',
@@ -2838,48 +2841,7 @@ Format: [FIRST NAME] on [SITE]',
       'module' => 'computed_field',
       'settings' => array(),
       'type' => 'computed',
-      'weight' => 86,
-    ),
-    'workbench_access_field' => 0,
-  );
-
-  // Exported field_instance: 'node-voices-field_voices_explore_programs_te'.
-  $field_instances['node-voices-field_voices_explore_programs_te'] = array(
-    'bundle' => 'voices',
-    'custom_add_another' => '',
-    'custom_remove' => '',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 18,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_voices_explore_programs_te',
-    'label' => 'Voices Explore Programs Text',
-    'required' => 0,
-    'settings' => array(
-      'custom_add_another' => '',
-      'custom_remove' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'computed_field',
-      'settings' => array(),
-      'type' => 'computed',
-      'weight' => 87,
+      'weight' => 89,
     ),
     'workbench_access_field' => 0,
   );
@@ -2969,8 +2931,8 @@ Format: [FIRST NAME] on [SITE]',
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-voices-field_voices_stay_in_touch_path'.
-  $field_instances['node-voices-field_voices_stay_in_touch_path'] = array(
+  // Exported field_instance: 'node-voices-field_voices_stay_in_touch_cta'.
+  $field_instances['node-voices-field_voices_stay_in_touch_cta'] = array(
     'bundle' => 'voices',
     'custom_add_another' => '',
     'custom_remove' => '',
@@ -2979,9 +2941,12 @@ Format: [FIRST NAME] on [SITE]',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 15,
+        'module' => 'computed_field',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'computed_field_plain',
+        'weight' => 44,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2992,8 +2957,8 @@ Format: [FIRST NAME] on [SITE]',
     ),
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
-    'field_name' => 'field_voices_stay_in_touch_path',
-    'label' => 'Voices Stay In Touch Path',
+    'field_name' => 'field_voices_stay_in_touch_cta',
+    'label' => 'Voices Stay In Touch CTA',
     'required' => 0,
     'settings' => array(
       'custom_add_another' => '',
@@ -3005,48 +2970,7 @@ Format: [FIRST NAME] on [SITE]',
       'module' => 'computed_field',
       'settings' => array(),
       'type' => 'computed',
-      'weight' => 84,
-    ),
-    'workbench_access_field' => 0,
-  );
-
-  // Exported field_instance: 'node-voices-field_voices_stay_in_touch_text'.
-  $field_instances['node-voices-field_voices_stay_in_touch_text'] = array(
-    'bundle' => 'voices',
-    'custom_add_another' => '',
-    'custom_remove' => '',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 16,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_voices_stay_in_touch_text',
-    'label' => 'Voices Stay In Touch Text',
-    'required' => 0,
-    'settings' => array(
-      'custom_add_another' => '',
-      'custom_remove' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'computed_field',
-      'settings' => array(),
-      'type' => 'computed',
-      'weight' => 85,
+      'weight' => 88,
     ),
     'workbench_access_field' => 0,
   );
@@ -3103,11 +3027,9 @@ Format: [FIRST NAME] on [SITE]');
   t('URL Alias');
   t('Use a cropped version of the full header image for this image.');
   t('Voices CTA');
-  t('Voices Explore Programs Path');
-  t('Voices Explore Programs Text');
+  t('Voices Explore Program CTA');
   t('Voices Path');
-  t('Voices Stay In Touch Path');
-  t('Voices Stay In Touch Text');
+  t('Voices Stay In Touch CTA');
 
   return $field_instances;
 }
