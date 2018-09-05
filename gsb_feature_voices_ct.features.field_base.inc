@@ -46,54 +46,27 @@ $entity_field[0]["value"] = \'<a href="/\'.$voices_path[0]["value"].\'" class="c
     'type' => 'computed',
   );
 
-  // Exported field_base: 'field_voices_explore_programs_pa'.
-  $field_bases['field_voices_explore_programs_pa'] = array(
+  // Exported field_base: 'field_voices_explore_program_cta'.
+  $field_bases['field_voices_explore_program_cta'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_voices_explore_programs_pa',
+    'field_name' => 'field_voices_explore_program_cta',
     'indexes' => array(),
     'locked' => 0,
     'module' => 'computed_field',
     'settings' => array(
       'code' => '$person_type_id = field_get_items($entity_type, $entity, \'field_person_type\');
-$entity_field[0][\'value\'] = variable_get(\'gsb_feature_voices_cta_explore_programs_path-\'.$person_type_id[0][\'tid\']);',
-      'database' => array(
-        'data_default' => '',
-        'data_index' => 0,
-        'data_length' => 256,
-        'data_not_NULL' => 0,
-        'data_precision' => 10,
-        'data_scale' => 2,
-        'data_size' => 'normal',
-        'data_type' => 'text',
-      ),
-      'display_format' => '$display_output = $entity_field_item[\'value\'];',
-      'recalculate' => 0,
-      'store' => 0,
-    ),
-    'translatable' => 0,
-    'type' => 'computed',
-  );
+$path = variable_get(\'gsb_feature_voices_cta_explore_programs_path-\'.$person_type_id[0][\'tid\']);
+$text = variable_get(\'gsb_feature_voices_cta_explore_programs_text-\'.$person_type_id[0][\'tid\']);
 
-  // Exported field_base: 'field_voices_explore_programs_te'.
-  $field_bases['field_voices_explore_programs_te'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_voices_explore_programs_te',
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'computed_field',
-    'settings' => array(
-      'code' => '$person_type_id = field_get_items($entity_type, $entity, \'field_person_type\');
-$entity_field[0][\'value\'] = variable_get(\'gsb_feature_voices_cta_explore_programs_text-\'.$person_type_id[0][\'tid\']);',
+$entity_field[0]["value"] = \'<a href="/\'.$path.\'" class="cta">\'.$text.\'</a>\';
+',
       'database' => array(
         'data_default' => '',
         'data_index' => 0,
-        'data_length' => 256,
+        'data_length' => 300,
         'data_not_NULL' => 0,
         'data_precision' => 10,
         'data_scale' => 2,
@@ -202,54 +175,27 @@ $entity_field[0]["value"] = $path;',
     'type' => 'computed',
   );
 
-  // Exported field_base: 'field_voices_stay_in_touch_path'.
-  $field_bases['field_voices_stay_in_touch_path'] = array(
+  // Exported field_base: 'field_voices_stay_in_touch_cta'.
+  $field_bases['field_voices_stay_in_touch_cta'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_voices_stay_in_touch_path',
+    'field_name' => 'field_voices_stay_in_touch_cta',
     'indexes' => array(),
     'locked' => 0,
     'module' => 'computed_field',
     'settings' => array(
       'code' => '$person_type_id = field_get_items($entity_type, $entity, \'field_person_type\');
-$entity_field[0][\'value\'] = variable_get(\'gsb_feature_voices_cta_stay_in_touch_path-\'.$person_type_id[0][\'tid\']);',
-      'database' => array(
-        'data_default' => '',
-        'data_index' => 0,
-        'data_length' => 256,
-        'data_not_NULL' => 0,
-        'data_precision' => 10,
-        'data_scale' => 2,
-        'data_size' => 'normal',
-        'data_type' => 'text',
-      ),
-      'display_format' => '$display_output = $entity_field_item[\'value\'];',
-      'recalculate' => 0,
-      'store' => 0,
-    ),
-    'translatable' => 0,
-    'type' => 'computed',
-  );
+$path = variable_get(\'gsb_feature_voices_cta_stay_in_touch_path-\'.$person_type_id[0][\'tid\']);
+$text = variable_get(\'gsb_feature_voices_cta_stay_in_touch_text-\'.$person_type_id[0][\'tid\']);
 
-  // Exported field_base: 'field_voices_stay_in_touch_text'.
-  $field_bases['field_voices_stay_in_touch_text'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_voices_stay_in_touch_text',
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'computed_field',
-    'settings' => array(
-      'code' => '$person_type_id = field_get_items($entity_type, $entity, \'field_person_type\');
-$entity_field[0][\'value\'] = variable_get(\'gsb_feature_voices_cta_stay_in_touch_text-\'.$person_type_id[0][\'tid\']);',
+$entity_field[0]["value"] = \'<a href="/\'.$path.\'" class="cta">\'.$text.\'</a>\';
+',
       'database' => array(
         'data_default' => '',
         'data_index' => 0,
-        'data_length' => 256,
+        'data_length' => 300,
         'data_not_NULL' => 0,
         'data_precision' => 10,
         'data_scale' => 2,
