@@ -413,6 +413,32 @@ function gsb_feature_voices_ct_ds_field_settings_info() {
         ),
       ),
     ),
+    'field_voices_explore_program_cta' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => 'field-voices-explore-program-cta',
+          'ow-def-cl' => FALSE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_voices_stay_in_touch_cta' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => 'field-voices-stay-in-touch-cta',
+          'ow-def-cl' => FALSE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
   );
   $export['node|voices|default'] = $ds_fieldsetting;
 
@@ -537,6 +563,8 @@ function gsb_feature_voices_ct_ds_layout_settings_info() {
         34 => 'field_related_programs',
         35 => 'field_link_unlimited',
         36 => 'field_file_unlimited_public',
+        37 => 'field_voices_stay_in_touch_cta',
+        38 => 'field_voices_explore_program_cta',
       ),
     ),
     'fields' => array(
@@ -569,11 +597,13 @@ function gsb_feature_voices_ct_ds_layout_settings_info() {
       'related_title' => 'right',
       'field_related_faculty' => 'right',
       'field_profile_links' => 'right',
-      'voices_ct_background_rail' => 'right',
       'field_person_ref_unlimited' => 'right',
+      'voices_ct_background_rail' => 'right',
+      'field_voices_stay_in_touch_cta' => 'right',
       'field_related_idea_story' => 'right',
-      'group_wrapper_related' => 'right',
       'field_related_other_unlimited' => 'right',
+      'field_voices_explore_program_cta' => 'right',
+      'group_wrapper_related' => 'right',
       'field_related_programs' => 'right',
       'field_link_unlimited' => 'right',
       'field_file_unlimited_public' => 'right',

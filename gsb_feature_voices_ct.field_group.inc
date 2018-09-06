@@ -454,7 +454,7 @@ function gsb_feature_voices_ct_field_group_info() {
   $field_group->parent_name = 'group_wrapper_tablet_4';
   $field_group->data = array(
     'label' => 'Related',
-    'weight' => '24',
+    'weight' => '26',
     'children' => array(
       0 => 'field_file_unlimited_public',
       1 => 'field_link_unlimited',
@@ -592,8 +592,10 @@ function gsb_feature_voices_ct_field_group_info() {
     'label' => 'Tablet 4',
     'weight' => '14',
     'children' => array(
-      0 => 'voices_ct_background_rail',
-      1 => 'group_wrapper_related',
+      0 => 'field_voices_explore_program_cta',
+      1 => 'field_voices_stay_in_touch_cta',
+      2 => 'voices_ct_background_rail',
+      3 => 'group_wrapper_related',
     ),
     'format_type' => 'div',
     'format_settings' => array(
