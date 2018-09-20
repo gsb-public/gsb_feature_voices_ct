@@ -2561,7 +2561,7 @@ Format: [FIRST NAME] on [SITE]',
         'settings' => array(
           'bypass_access' => 0,
           'conditions' => array(),
-          'link' => 0,
+          'link' => 1,
         ),
         'type' => 'entityreference_label',
         'weight' => 26,
