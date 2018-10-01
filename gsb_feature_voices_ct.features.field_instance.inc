@@ -2557,13 +2557,14 @@ Format: [FIRST NAME] on [SITE]',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
+        'module' => 'gsb_feature_existing_node_list_fpp',
         'settings' => array(
-          'bypass_access' => 0,
           'conditions' => array(),
-          'link' => 0,
+          'links' => 0,
+          'use_content_language' => 1,
+          'view_mode' => 'idea_story_related',
         ),
-        'type' => 'entityreference_label',
+        'type' => 'entityreference_entity_view',
         'weight' => 26,
       ),
       'teaser' => array(
