@@ -470,7 +470,7 @@ function gsb_feature_voices_ct_field_group_info() {
       'label' => 'Related',
       'instance_settings' => array(
         'id' => '',
-        'classes' => 'group-wrapper-related field-group-fieldset',
+        'classes' => '',
         'description' => '',
       ),
       'formatter' => 'collapsed',
