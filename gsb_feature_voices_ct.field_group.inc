@@ -429,6 +429,9 @@ function gsb_feature_voices_ct_field_group_info() {
       1 => 'field_title_position_single',
       2 => 'field_voices_full_name',
       3 => 'field_background_color',
+      4 => 'field_voices_faculty_sad',
+      5 => 'field_voices_faculty_joint_appt',
+      6 => 'field_voices_faculty_title',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(

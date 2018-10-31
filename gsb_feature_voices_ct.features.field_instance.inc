@@ -287,7 +287,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'list_key',
-        'weight' => 8,
+        'weight' => 11,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -938,7 +938,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
       'module' => 'computed_field',
       'settings' => array(),
       'type' => 'computed',
-      'weight' => 7,
+      'weight' => 6,
     ),
     'workbench_access_field' => 0,
   );
@@ -2842,7 +2842,7 @@ Format: [FIRST NAME] on [SITE]',
       'module' => 'computed_field',
       'settings' => array(),
       'type' => 'computed',
-      'weight' => 89,
+      'weight' => 15,
     ),
     'workbench_access_field' => 0,
   );
@@ -2883,7 +2883,7 @@ Format: [FIRST NAME] on [SITE]',
       'module' => 'computed_field',
       'settings' => array(),
       'type' => 'computed',
-      'weight' => 86,
+      'weight' => 12,
     ),
     'workbench_access_field' => 0,
   );
@@ -2924,7 +2924,139 @@ Format: [FIRST NAME] on [SITE]',
       'module' => 'computed_field',
       'settings' => array(),
       'type' => 'computed',
-      'weight' => 87,
+      'weight' => 13,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-voices-field_voices_faculty_joint_appt'.
+  $field_instances['node-voices-field_voices_faculty_joint_appt'] = array(
+    'bundle' => 'voices',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'computed_field',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'computed_field_plain',
+        'weight' => 10,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_voices_faculty_joint_appt',
+    'label' => 'Voices Faculty Joint Appt',
+    'required' => 0,
+    'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'computed_field',
+      'settings' => array(),
+      'type' => 'computed',
+      'weight' => 18,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-voices-field_voices_faculty_sad'.
+  $field_instances['node-voices-field_voices_faculty_sad'] = array(
+    'bundle' => 'voices',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'deleted' => 0,
+    'description' => 'Senior Associate Dean',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'computed_field',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'computed_field_plain',
+        'weight' => 9,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_voices_faculty_sad',
+    'label' => 'Voices Faculty SAD',
+    'required' => 0,
+    'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'computed_field',
+      'settings' => array(),
+      'type' => 'computed',
+      'weight' => 17,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-voices-field_voices_faculty_title'.
+  $field_instances['node-voices-field_voices_faculty_title'] = array(
+    'bundle' => 'voices',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'computed_field',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'computed_field_plain',
+        'weight' => 8,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_voices_faculty_title',
+    'label' => 'Voices Faculty Title',
+    'required' => 0,
+    'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'computed_field',
+      'settings' => array(),
+      'type' => 'computed',
+      'weight' => 16,
     ),
     'workbench_access_field' => 0,
   );
@@ -3053,7 +3185,7 @@ Format: [FIRST NAME] on [SITE]',
       'module' => 'computed_field',
       'settings' => array(),
       'type' => 'computed',
-      'weight' => 88,
+      'weight' => 14,
     ),
     'workbench_access_field' => 0,
   );
@@ -3094,7 +3226,7 @@ Format: [FIRST NAME] on [SITE]',
       'module' => 'computed_field',
       'settings' => array(),
       'type' => 'computed',
-      'weight' => 84,
+      'weight' => 10,
     ),
     'workbench_access_field' => 0,
   );
@@ -3135,7 +3267,7 @@ Format: [FIRST NAME] on [SITE]',
       'module' => 'computed_field',
       'settings' => array(),
       'type' => 'computed',
-      'weight' => 85,
+      'weight' => 11,
     ),
     'workbench_access_field' => 0,
   );
@@ -3187,6 +3319,7 @@ Format: [FIRST NAME] on [SITE]');
   t('Publication or Event');
   t('Quote');
   t('Region');
+  t('Senior Associate Dean');
   t('Short URL');
   t('Story');
   t('URL Alias');
@@ -3195,6 +3328,9 @@ Format: [FIRST NAME] on [SITE]');
   t('Voices Explore Program CTA');
   t('Voices Explore Programs Path');
   t('Voices Explore Programs Text');
+  t('Voices Faculty Joint Appt');
+  t('Voices Faculty SAD');
+  t('Voices Faculty Title');
   t('Voices Path');
   t('Voices Stay In Touch CTA');
   t('Voices Stay In Touch Path');
