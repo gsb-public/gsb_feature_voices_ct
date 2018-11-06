@@ -113,6 +113,14 @@ function gsb_feature_voices_ct_form_alter(&$form, &$form_state) {
     drupal_add_js(drupal_get_path('module', 'gsb_feature_voices_ct') . '/js/gsb_feature_voices_ct.js');
   }
 
+  if($form['#id'] == 'views-exposed-form-voices-filters-voices-filters-pane') {
+    foreach ($form['#info'] as $filter_info) {
+      $filter = $filter_info['value'];
+      if ($form[$filter]['#type'] == 'select') {
+        $form[$filter]['#options']['All'] = $filter_info['label'];
+      }
+    }
+  }
 };
 
 /**
