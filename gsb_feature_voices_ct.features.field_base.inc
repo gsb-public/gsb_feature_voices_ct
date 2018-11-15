@@ -156,8 +156,8 @@ $entity_field[0][\'value\'] = variable_get(\'gsb_feature_voices_cta_explore_prog
     'settings' => array(
       'code' => '$person_type_id = field_get_items($entity_type, $entity, \'field_person_fac_single_ref\');
 $node = node_load($person_type_id[0][\'target_id\']);
-if (isset($node->field_joint_appointment[\'und\'][0][\'title\'])) {
-  $entity_field[0][\'value\'] = $node->field_joint_appointment[\'und\'][0][\'title\'];
+if (isset($node->field_joint_appointment[\'und\'][0][\'value\'])) {
+  $entity_field[0][\'value\'] = $node->field_joint_appointment[\'und\'][0][\'value\'];
 }',
       'database' => array(
         'data_default' => '',
@@ -190,8 +190,8 @@ if (isset($node->field_joint_appointment[\'und\'][0][\'title\'])) {
     'settings' => array(
       'code' => '$person_type_id = field_get_items($entity_type, $entity, \'field_person_fac_single_ref\');
 $node = node_load($person_type_id[0][\'target_id\']);
-if (isset($node->field_sad[\'und\'][0][\'title\'])) {
- $entity_field[0][\'value\'] = $node->field_sad[\'und\'][0][\'title\'];
+if (isset($node->field_sad[\'und\'][0][\'value\'])) {
+ $entity_field[0][\'value\'] = $node->field_sad[\'und\'][0][\'value\'];
 }',
       'database' => array(
         'data_default' => '',
