@@ -190,9 +190,12 @@ if (isset($node->field_joint_appointment[\'und\'][0][\'value\'])) {
     'settings' => array(
       'code' => '$person_type_id = field_get_items($entity_type, $entity, \'field_person_fac_single_ref\');
 $node = node_load($person_type_id[0][\'target_id\']);
-if (isset($node->field_sad[\'und\'][0][\'value\'])) {
- $entity_field[0][\'value\'] = $node->field_sad[\'und\'][0][\'value\'];
-}',
+if (isset($node->field_sad[\'und\'][0][\'value\']) && $node->field_sad[\'und\'][0][\'value\'] == \'yes\') {
+ $entity_field[0][\'value\'] = \'Senior Associate Dean\';
+} else {
+ $entity_field[0][\'value\'] = \'\';
+};
+',
       'database' => array(
         'data_default' => '',
         'data_index' => 0,
