@@ -429,8 +429,8 @@ function gsb_feature_voices_ct_field_group_info() {
       1 => 'field_title_position_single',
       2 => 'field_voices_full_name',
       3 => 'field_background_color',
-      4 => 'field_voices_faculty_sad',
-      5 => 'field_voices_faculty_joint_appt',
+      4 => 'field_voices_faculty_joint_appt',
+      5 => 'field_voices_faculty_sad',
       6 => 'field_voices_faculty_title',
     ),
     'format_type' => 'fieldset',
@@ -457,7 +457,7 @@ function gsb_feature_voices_ct_field_group_info() {
   $field_group->parent_name = 'group_wrapper_tablet_4';
   $field_group->data = array(
     'label' => 'Related',
-    'weight' => '26',
+    'weight' => '27',
     'children' => array(
       0 => 'field_file_unlimited_public',
       1 => 'field_link_unlimited',
@@ -530,6 +530,7 @@ function gsb_feature_voices_ct_field_group_info() {
       1 => 'field_field_of_study',
       2 => 'field_location',
       3 => 'field_professional_experience',
+      4 => 'field_voices_faculty_acadmc_area',
     ),
     'format_type' => 'div',
     'format_settings' => array(

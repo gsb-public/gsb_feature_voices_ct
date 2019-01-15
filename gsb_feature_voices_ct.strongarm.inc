@@ -249,7 +249,7 @@ echo $entity_field[0][\'value\'];
       'display' => array(
         'gsb_feature_base_fields_faculty_authors' => array(
           'default' => array(
-            'weight' => '30',
+            'weight' => '31',
             'visible' => FALSE,
           ),
           'teaser' => array(
