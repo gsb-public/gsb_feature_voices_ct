@@ -143,6 +143,41 @@ $entity_field[0][\'value\'] = variable_get(\'gsb_feature_voices_cta_explore_prog
     'type' => 'computed',
   );
 
+  // Exported field_base: 'field_voices_faculty_acadmc_area'.
+  $field_bases['field_voices_faculty_acadmc_area'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_voices_faculty_acadmc_area',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'computed_field',
+    'settings' => array(
+      'code' => '$person_type_id = field_get_items($entity_type, $entity, \'field_person_fac_single_ref\');
+$node = node_load($person_type_id[0][\'target_id\']);
+if (isset($node->field_academic_area_single[\'und\'][0][\'tid\'])) {
+  $term = taxonomy_term_load($node->field_academic_area_single[\'und\'][0][\'tid\']);
+  $entity_field[0][\'value\'] = $term->name;
+}',
+      'database' => array(
+        'data_default' => '',
+        'data_index' => 0,
+        'data_length' => 256,
+        'data_not_NULL' => 0,
+        'data_precision' => 10,
+        'data_scale' => 2,
+        'data_size' => 'normal',
+        'data_type' => 'text',
+      ),
+      'display_format' => '$display_output = $entity_field_item[\'value\'];',
+      'recalculate' => 0,
+      'store' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'computed',
+  );
+
   // Exported field_base: 'field_voices_faculty_joint_appt'.
   $field_bases['field_voices_faculty_joint_appt'] = array(
     'active' => 1,
@@ -156,8 +191,8 @@ $entity_field[0][\'value\'] = variable_get(\'gsb_feature_voices_cta_explore_prog
     'settings' => array(
       'code' => '$person_type_id = field_get_items($entity_type, $entity, \'field_person_fac_single_ref\');
 $node = node_load($person_type_id[0][\'target_id\']);
-if (isset($node->field_joint_appointment[\'und\'][0][\'value\'])) {
-  $entity_field[0][\'value\'] = $node->field_joint_appointment[\'und\'][0][\'value\'];
+if (isset($node->field_academic_area_single[\'und\'][0][\'tid\'])) {
+  $entity_field[0][\'value\'] = taxonomy_term_load($node->field_academic_area_single[\'und\'][0][\'tid\']);
 }',
       'database' => array(
         'data_default' => '',
