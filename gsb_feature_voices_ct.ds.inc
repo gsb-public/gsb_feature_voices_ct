@@ -228,7 +228,7 @@ function gsb_feature_voices_ct_ds_field_settings_info() {
         'ft' => array(
           'func' => 'theme_ds_field_expert',
           'lb-el' => 'div',
-          'lb-cl' => 'field-label',
+          'lb-cl' => 'field-label-prof-exps',
           'lb-col' => TRUE,
           'fi' => TRUE,
           'fi-el' => 'div',
