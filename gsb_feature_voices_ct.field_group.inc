@@ -457,7 +457,7 @@ function gsb_feature_voices_ct_field_group_info() {
   $field_group->parent_name = 'group_wrapper_tablet_4';
   $field_group->data = array(
     'label' => 'Related',
-    'weight' => '27',
+    'weight' => '26',
     'children' => array(
       0 => 'field_file_unlimited_public',
       1 => 'field_link_unlimited',
