@@ -2818,7 +2818,7 @@ Format: [FIRST NAME] on [SITE]',
           'conditions' => array(),
         ),
         'type' => 'computed_field_computed_value',
-        'weight' => 26,
+        'weight' => 24,
       ),
       'teaser' => array(
         'label' => 'above',
