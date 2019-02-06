@@ -67,6 +67,7 @@ features[field_group][] = group_wrapper_tablet_1|node|voices|default
 features[field_group][] = group_wrapper_tablet_2|node|voices|default
 features[field_group][] = group_wrapper_tablet_3|node|voices|default
 features[field_group][] = group_wrapper_tablet_4|node|voices|default
+features[field_group][] = group_wrapper_taxonomy|node|voices|default
 features[field_instance][] = node-voices-field_academic_degrees_unlimited
 features[field_instance][] = node-voices-field_alumni_directory_link
 features[field_instance][] = node-voices-field_alumni_story
