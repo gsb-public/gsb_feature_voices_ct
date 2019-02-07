@@ -492,7 +492,7 @@ function gsb_feature_voices_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Tablet 1',
-    'weight' => '14',
+    'weight' => '11',
     'children' => array(
       0 => 'field_profile_photo',
     ),
@@ -524,7 +524,7 @@ function gsb_feature_voices_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Tablet 2',
-    'weight' => '15',
+    'weight' => '12',
     'children' => array(
       0 => 'field_academic_degrees_unlimited',
       1 => 'field_field_of_study',
@@ -560,7 +560,7 @@ function gsb_feature_voices_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Tablet 3',
-    'weight' => '16',
+    'weight' => '13',
     'children' => array(
       0 => 'field_alumni_directory_link',
       1 => 'field_profile_links',
@@ -594,7 +594,7 @@ function gsb_feature_voices_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Tablet 4',
-    'weight' => '17',
+    'weight' => '14',
     'children' => array(
       0 => 'field_voices_explore_program_cta',
       1 => 'field_voices_stay_in_touch_cta',
@@ -618,34 +618,6 @@ function gsb_feature_voices_ct_field_group_info() {
   );
   $field_groups['group_wrapper_tablet_4|node|voices|default'] = $field_group;
 
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_wrapper_taxonomy|node|voices|default';
-  $field_group->group_name = 'group_wrapper_taxonomy';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'voices';
-  $field_group->mode = 'default';
-  $field_group->parent_name = '';
-  $field_group->data = array(
-    'label' => 'Taxonomy wrapper',
-    'weight' => '8',
-    'children' => array(
-      0 => 'field_industry',
-      1 => 'field_region_of_interest',
-    ),
-    'format_type' => 'gsb_field_formatter_group_comma_separator',
-    'format_settings' => array(
-      'label' => 'Taxonomy wrapper',
-      'instance_settings' => array(
-        'item_count' => '0',
-        'classes' => 'group-wrapper-taxonomy field-group-gsb_field_formatter_group_comma_separator',
-      ),
-      'formatter' => 'open',
-    ),
-  );
-  $field_groups['group_wrapper_taxonomy|node|voices|default'] = $field_group;
-
   // Translatables
   // Included for use with string extractors like potx.
   t('Administration');
@@ -664,7 +636,6 @@ function gsb_feature_voices_ct_field_group_info() {
   t('Tablet 4');
   t('Tagging');
   t('Tags');
-  t('Taxonomy wrapper');
   t('Top Tabs');
   t('Wrapper');
 
