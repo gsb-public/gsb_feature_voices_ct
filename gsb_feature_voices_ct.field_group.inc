@@ -492,7 +492,7 @@ function gsb_feature_voices_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Tablet 1',
-    'weight' => '12',
+    'weight' => '14',
     'children' => array(
       0 => 'field_profile_photo',
     ),
@@ -524,7 +524,7 @@ function gsb_feature_voices_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Tablet 2',
-    'weight' => '13',
+    'weight' => '15',
     'children' => array(
       0 => 'field_academic_degrees_unlimited',
       1 => 'field_field_of_study',
@@ -560,7 +560,7 @@ function gsb_feature_voices_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Tablet 3',
-    'weight' => '14',
+    'weight' => '16',
     'children' => array(
       0 => 'field_alumni_directory_link',
       1 => 'field_profile_links',
@@ -594,7 +594,7 @@ function gsb_feature_voices_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Tablet 4',
-    'weight' => '15',
+    'weight' => '17',
     'children' => array(
       0 => 'field_voices_explore_program_cta',
       1 => 'field_voices_stay_in_touch_cta',
