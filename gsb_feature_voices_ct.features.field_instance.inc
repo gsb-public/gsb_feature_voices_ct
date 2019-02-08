@@ -1034,7 +1034,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'settings' => array(
           'conditions' => array(),
           'image_link' => '',
-          'image_style' => '',
+          'image_style' => '566x_variable',
         ),
         'type' => 'image',
         'weight' => 2,
