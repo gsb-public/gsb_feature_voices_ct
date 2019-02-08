@@ -451,7 +451,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 43,
+        'weight' => 42,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -802,7 +802,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 39,
+        'weight' => 38,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -957,7 +957,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'settings' => array(
           'conditions' => array(),
           'image_link' => '',
-          'image_style' => '',
+          'image_style' => '566x_variable',
         ),
         'type' => 'image',
         'weight' => 1,
@@ -1030,9 +1030,14 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 38,
+        'module' => 'image',
+        'settings' => array(
+          'conditions' => array(),
+          'image_link' => '',
+          'image_style' => '566x_variable',
+        ),
+        'type' => 'image',
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -1152,7 +1157,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 40,
+        'weight' => 39,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1265,7 +1270,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 41,
+        'weight' => 40,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1331,7 +1336,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 42,
+        'weight' => 41,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1649,7 +1654,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 44,
+        'weight' => 43,
       ),
       'teaser' => array(
         'label' => 'above',
