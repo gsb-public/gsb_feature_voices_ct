@@ -955,9 +955,13 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-          'conditions' => array(),
+          'conditions' => array(
+            0 => array(
+              'condition' => '',
+            ),
+          ),
           'image_link' => '',
-          'image_style' => '566x_variable',
+          'image_style' => '',
         ),
         'type' => 'image',
         'weight' => 1,
