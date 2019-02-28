@@ -68,7 +68,6 @@ function gsb_feature_voices_ct_form_alter(&$form, &$form_state) {
         $field_condition_hidden['field_first_name'][] = array('value' => $key);
         $field_condition_hidden['field_last_name'][] = array('value' => $key);
         $field_condition_hidden['field_degree_year'][] = array('value' => $key);
-        $field_condition_hidden['field_profile_photo'][] = array('value' => $key);
         $field_condition_hidden_opt['field_profile_links'][] = array('value' => $key);
         $field_condition_hidden_opt['field_centers_research_programs'][] = array('value' => $key);
         $field_condition['field_person_fac_single_ref'][] = array('value' => $key);
