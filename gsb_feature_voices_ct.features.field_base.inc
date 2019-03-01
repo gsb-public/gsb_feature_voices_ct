@@ -191,8 +191,8 @@ if (isset($node->field_academic_area_single[\'und\'][0][\'tid\'])) {
     'settings' => array(
       'code' => '$person_type_id = field_get_items($entity_type, $entity, \'field_person_fac_single_ref\');
 $node = node_load($person_type_id[0][\'target_id\']);
-if (isset($node->field_academic_area_single[\'und\'][0][\'tid\'])) {
-  $entity_field[0][\'value\'] = taxonomy_term_load($node->field_academic_area_single[\'und\'][0][\'tid\']);
+if (isset($node->field_joint_appointment[\'und\'][0][\'value\'])) {
+  $entity_field[0][\'value\'] = $node->field_joint_appointment[\'und\'][0][\'value\'];
 }',
       'database' => array(
         'data_default' => '',
