@@ -2015,7 +2015,7 @@ Format: [FIRST NAME] on [SITE]',
           'conditions' => array(),
         ),
         'type' => 'link_default',
-        'weight' => 22,
+        'weight' => 20,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3026,6 +3026,50 @@ Format: [FIRST NAME] on [SITE]',
     'workbench_access_field' => 0,
   );
 
+  // Exported field_instance: 'node-voices-field_voices_faculty_prof_link'.
+  $field_instances['node-voices-field_voices_faculty_prof_link'] = array(
+    'bundle' => 'voices',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'computed_field',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'computed_field_unsanitized',
+        'weight' => 21,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_voices_faculty_prof_link',
+    'label' => 'Voices Faculty Prof Link',
+    'required' => 0,
+    'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'computed_field',
+      'settings' => array(),
+      'type' => 'computed',
+      'weight' => 84,
+    ),
+    'workbench_access_field' => 0,
+  );
+
   // Exported field_instance: 'node-voices-field_voices_faculty_sad'.
   $field_instances['node-voices-field_voices_faculty_sad'] = array(
     'bundle' => 'voices',
@@ -3383,6 +3427,7 @@ Format: [FIRST NAME] on [SITE]');
   t('Voices Explore Programs Text');
   t('Voices Faculty Academic Area');
   t('Voices Faculty Joint Appt');
+  t('Voices Faculty Prof Link');
   t('Voices Faculty SAD');
   t('Voices Faculty Title');
   t('Voices Path');

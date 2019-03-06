@@ -212,6 +212,40 @@ if (isset($node->field_joint_appointment[\'und\'][0][\'value\'])) {
     'type' => 'computed',
   );
 
+  // Exported field_base: 'field_voices_faculty_prof_link'.
+  $field_bases['field_voices_faculty_prof_link'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_voices_faculty_prof_link',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'computed_field',
+    'settings' => array(
+      'code' => '$person_type_id = field_get_items($entity_type, $entity, \'field_person_fac_single_ref\');
+$node = node_load($person_type_id[0][\'target_id\']);
+if (isset($node->field_endowed_title_appointment[\'und\'][0][\'title\'])) {
+$entity_field[0][\'value\'] = "<a href=\'/".$node->path[\'alias\']."\'>Faculty Profile</a>";
+}',
+      'database' => array(
+        'data_default' => '',
+        'data_index' => 0,
+        'data_length' => 600,
+        'data_not_NULL' => 0,
+        'data_precision' => 10,
+        'data_scale' => 2,
+        'data_size' => 'normal',
+        'data_type' => 'varchar',
+      ),
+      'display_format' => '$display_output = $entity_field_item[\'value\'];',
+      'recalculate' => 0,
+      'store' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'computed',
+  );
+
   // Exported field_base: 'field_voices_faculty_sad'.
   $field_bases['field_voices_faculty_sad'] = array(
     'active' => 1,
@@ -264,7 +298,8 @@ if (isset($node->field_sad[\'und\'][0][\'value\']) && $node->field_sad[\'und\'][
 $node = node_load($person_type_id[0][\'target_id\']);
 if (isset($node->field_endowed_title_appointment[\'und\'][0][\'title\'])) {
 $entity_field[0][\'value\'] = $node->field_endowed_title_appointment[\'und\'][0][\'title\'];
-}',
+}
+',
       'database' => array(
         'data_default' => '',
         'data_index' => 0,

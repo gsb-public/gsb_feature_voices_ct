@@ -565,6 +565,7 @@ function gsb_feature_voices_ct_field_group_info() {
       0 => 'field_alumni_directory_link',
       1 => 'field_profile_links',
       2 => 'field_program_attended',
+      3 => 'field_voices_faculty_prof_link',
     ),
     'format_type' => 'div',
     'format_settings' => array(
