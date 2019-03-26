@@ -902,47 +902,6 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-voices-field_full_name'.
-  $field_instances['node-voices-field_full_name'] = array(
-    'bundle' => 'voices',
-    'custom_add_another' => '',
-    'custom_remove' => '',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 30,
-      ),
-      'teaser' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 14,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_full_name',
-    'label' => 'Full name',
-    'required' => 0,
-    'settings' => array(
-      'custom_add_another' => '',
-      'custom_remove' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'computed_field',
-      'settings' => array(),
-      'type' => 'computed',
-      'weight' => 6,
-    ),
-    'workbench_access_field' => 0,
-  );
-
   // Exported field_instance: 'node-voices-field_image_key_image'.
   $field_instances['node-voices-field_image_key_image'] = array(
     'bundle' => 'voices',
@@ -3391,7 +3350,6 @@ Format: [FIRST NAME] on [SITE]');
 (example: MBA ’18 | Seed Transformation Program ’19)');
   t('Format: Position, Organization (example: Assistant Vice President of Regional Operations, Amazon)');
   t('Full Name');
-  t('Full name');
   t('Header Image');
   t('Hometown');
   t('Industry');

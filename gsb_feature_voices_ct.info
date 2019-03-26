@@ -80,7 +80,6 @@ features[field_instance][] = node-voices-field_degree_year
 features[field_instance][] = node-voices-field_field_of_study
 features[field_instance][] = node-voices-field_file_unlimited_public
 features[field_instance][] = node-voices-field_first_name
-features[field_instance][] = node-voices-field_full_name
 features[field_instance][] = node-voices-field_image_key_image
 features[field_instance][] = node-voices-field_image_single_public
 features[field_instance][] = node-voices-field_industry
