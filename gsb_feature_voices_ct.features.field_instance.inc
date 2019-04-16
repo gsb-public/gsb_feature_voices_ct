@@ -494,7 +494,7 @@ function gsb_feature_voices_ct_field_default_field_instances() {
         'module' => 'date',
         'settings' => array(
           'conditions' => array(),
-          'format_type' => 'long',
+          'format_type' => 'medium',
           'fromto' => 'both',
           'multiple_from' => '',
           'multiple_number' => '',
