@@ -333,7 +333,7 @@ echo $entity_field[0][\'value\'];
   $strongarm->api_version = 1;
   $strongarm->name = 'xmlsitemap_settings_node_voices';
   $strongarm->value = array(
-    'status' => '0',
+    'status' => '1',
     'priority' => '0.5',
   );
   $export['xmlsitemap_settings_node_voices'] = $strongarm;
