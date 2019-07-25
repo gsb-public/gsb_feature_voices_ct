@@ -677,11 +677,16 @@ function gsb_feature_voices_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'taxonomy',
+        'module' => 'gsb_field_formatter',
         'settings' => array(
           'conditions' => array(),
+          'limit_depth' => 0,
+          'link_to_term' => 1,
+          'path_prefix' => 'programs/phd/fields/',
+          'separator' => ', ',
+          'tid_or_name' => 'name',
         ),
-        'type' => 'taxonomy_term_reference_link',
+        'type' => 'gsb_field_formatter_path_term_separator',
         'weight' => 14,
       ),
       'teaser' => array(
