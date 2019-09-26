@@ -25,8 +25,12 @@ function gsb_feature_voices_ct_field_default_field_bases() {
 
 $person_type_id = field_get_items($entity_type, $entity, \'field_person_type\');
 $person_type = taxonomy_term_load($person_type_id[0][\'tid\']);
-
+if ($person_type->name == \'Sloan Fellow\') {
+$entity_field[0]["value"] = \'<a href="/\'.$voices_path[0]["value"].\'" class="cta">See All MSx Student Voices</a>\';
+}
+else {
 $entity_field[0]["value"] = \'<a href="/\'.$voices_path[0]["value"].\'" class="cta">See All \'.$person_type->name.\' Voices</a>\';
+}
 ',
       'database' => array(
         'data_default' => '',
@@ -377,7 +381,7 @@ $person_type = taxonomy_term_load($person_type_id[0][\'tid\']);
 if ($person_type->name == \'MBA Student\') {
   $path = \'programs/mba/student-life/voices\';
 } elseif ($person_type->name == \'Sloan Fellow\') {
-  $path = \'programs/msx/life/voices\';
+  $path = \'programs/msx/life/student-experience/voices\';
 } elseif ($person_type->name == \'PhD Student\') {
   $path = \'programs/phd/student-life/voices\';
 } elseif ($person_type->name == \'MBA Alumni\') {
