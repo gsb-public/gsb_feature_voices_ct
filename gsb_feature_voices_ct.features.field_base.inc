@@ -381,7 +381,7 @@ $person_type = taxonomy_term_load($person_type_id[0][\'tid\']);
 if ($person_type->name == \'MBA Student\') {
   $path = \'programs/mba/student-life/voices\';
 } elseif ($person_type->name == \'Sloan Fellow\') {
-  $path = \'programs/msx/life/student-experience/voices\';
+  $path = \'programs/msx/life/students/voices\';
 } elseif ($person_type->name == \'PhD Student\') {
   $path = \'programs/phd/student-life/voices\';
 } elseif ($person_type->name == \'MBA Alumni\') {
