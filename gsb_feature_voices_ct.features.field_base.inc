@@ -387,7 +387,7 @@ if ($person_type->name == \'MBA Student\') {
 } elseif ($person_type->name == \'MBA Alumni\') {
   $path = \'programs/mba/alumni-community/voices/\';
 } elseif ($person_type->name == \'MSx/Sloan Alumni\') {
-  $path = \'programs/msx/alumni-community/voices\';
+  $path = \'programs/msx/why-stanford-msx/alumni-voices\';
 } elseif ($person_type->name == \'Executive Education Participant\') {
   $path = \'exec-ed/difference/voices\';
   } elseif ($person_type->name == \'Seed Transformation Program Participant\') {
